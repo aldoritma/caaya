@@ -331,3 +331,70 @@ body{
         margin-top: 30px;
     }
 }
+
+.contact-header{
+    height: 240px;
+    display: block;
+    position: relative;
+    background: url(img/contact-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.contact{
+    h1{
+        color: white;
+        @include font-size(96px);
+    }
+    h3{
+        color: #333333;
+        @include font-size(18px);
+        font-weight: 800;
+        margin-top: 0;
+    }
+}
+.contact-information{
+    background: #f7f7f7;
+    padding: 50px 80px;
+}
+.contact-form{
+    padding: 50px 80px;
+    background: white;
+    .wrap{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .input-container{
+        padding: 0 20px;
+        margin-bottom: 50px;
+        &.no-pad{
+            padding: 0;
+        }
+         &.no-pad-r{
+            padding-right: 0;
+        }
+    }
+    label{
+        left: 20px;
+    }
+    .button-submit{
+        background: #333333;
+        color: white;
+        font-weight: 800;
+        padding: 12px 20px;
+        width: 100%;
+        border: none;
+    }
+}
+.socmed{
+    li{
+        display: inline-block;
+        max-width: 20px;
+        margin-right: 10px;
+        a{
+            display: block;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}

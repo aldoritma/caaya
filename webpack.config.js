@@ -25,7 +25,9 @@ module.exports = {
 	entry: {
 		// app: src +'/app.js',
 		home: src + '/js/home.js',
-		about: src + '/js/about.js'
+		about: src + '/js/about.js',
+		contact: src + '/js/contact.js',
+
 		// vendor: ['gsap']
 	},
 	output: {
@@ -107,6 +109,12 @@ module.exports = {
 			filename: 'about.html',
 			template: './src/about.html',
 			chunks: ['about']
+		}),
+		new HtmlWebpackPlugin({
+			hash: true,
+			filename: 'contact.html',
+			template: './src/contact.html',
+			chunks: ['contact']
 		}),
 		new ExtractTextPlugin({
             filename: 'app.css',
