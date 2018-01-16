@@ -1,0 +1,66 @@
+.store-locator{
+    text-align: center;
+    padding: 60px 0;
+    background: #f0f0f0;
+    .heading-title{
+        @include font-size(20px);
+        display: inline-block;
+        border-bottom: 2px solid #333333;
+        text-transform: uppercase;
+    }
+}
+.stores{
+    margin-top: 50px;
+    a{
+        margin: 0 45px;
+        position: relative;
+        img{
+            @include transition(.3s ease-in-out);
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+        &:hover{
+            img{
+                @include transition(.3s ease-in-out);
+                -webkit-filter: none; /* Safari 6.0 - 9.0 */
+                filter: none;
+            }
+        }
+    }
+}
+
+.footer-menu{
+    background: #242424;
+    @include clearfix;
+    padding: 50px;
+    ul{
+        float: left;
+        padding: 0 10px;
+        margin: 0 20px;
+        li{
+            color: #999999;
+            display: block;
+        }
+        li:first-child{
+            color: white;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+    }
+}
+.footer-logo{
+    background: #242424;
+    position: relative;
+    img{
+        @extend .center-absolute;
+    }
+}
+.copyright{
+    background: #303030;
+    padding: 25px 0;
+    p{
+        margin: 0;
+        color: white;
+        display: block;
+    }
+}

@@ -1,0 +1,163 @@
+.container{
+    display: block;
+    width: 1170px;
+    margin: 0 auto;
+    @include clearfix;
+    &__small{
+        width: 960px;
+    }
+}
+.row, .clearfix{
+	@include clearfix;
+}
+.inline-block{
+	display: inline-block !important;
+}
+.d-block{
+	display: block;
+}
+.center-absolute{
+	@include center-absolute;
+}
+.center-relative{
+	@include center-relative;
+}
+.aligner{
+	@include vertical-center-parent;
+}
+.align{
+	&--left{
+		text-align: left;
+	}
+	&--center{
+		text-align: center;
+	}
+	&--right{
+		text-align: right;
+	}
+}
+
+
+/*  ======================================================
+	ROW
+======================================================  */
+.row{
+	@include clearfix;
+	display: block;
+}
+
+/*  ======================================================
+	GRID
+======================================================  */
+.col-12{
+	@include col(12, percent);
+}
+.col-11{
+	@include col(11, percent);
+	float: left;
+	@include max-screen(480px){
+	@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-10{
+	@include col(10, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-9{
+	@include col(9, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-8{
+	@include col(8, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-7{
+	@include col(7, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-6{
+	@include col(6, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-5{
+	@include col(5, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-4{
+	@include col(4, percent);
+	float: left;
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-3{
+	@include col(3, percent);
+	float: left;
+	@include max-screen(768px){
+		@include col(6, percent);
+	}
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+.col-2{
+	@include col(2, percent);
+	float: left;
+	@include max-screen(768px){
+		@include col(4, percent);
+	}
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+	}
+}
+.col-1{
+	@include col(1, percent);
+	float: left;
+	@include max-screen(768px){
+		@include col(2, percent);
+	}
+	@include max-screen(480px){
+		@include col(12, percent);
+		float: none;
+
+	}
+}
+
+
