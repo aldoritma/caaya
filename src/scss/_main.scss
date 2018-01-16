@@ -230,6 +230,16 @@ body{
 }
 .hero{
     min-height: 100vh;
+    .entrance-text{
+        span{
+            position: relative;
+            display: inline-block;
+            opacity: 0;
+        }
+    }
+    .img-hero{
+        @include transform(scale(3));
+    }
 }
 .hero-wrapper{
     width: 700px;
@@ -252,8 +262,72 @@ body{
     p{
         @include font-size(18px);
         font-weight: 800;
+        margin-top: 30px;
     }
     img{
         margin-top: -200px;
+    }
+}
+.about{
+    overflow: hidden;
+}
+.about-green{
+    position: relative;
+}
+
+.about-wrapper{
+    .col-4{
+        text-align: right;
+    }
+}
+
+.about-green{
+    .punchline{
+        padding-left: 50px;
+        h2{
+            margin-left: 100px;
+        }
+    }
+    blockquote{
+        margin-left: -50px;
+    }
+    .bg-par{
+        margin-top: -80px;
+    }
+}
+.about-blue{
+    .bg-par{
+        left: auto;
+        right: 0;
+    }
+    .col-4{
+        text-align: left;
+    }
+    .col-8{
+        padding-right: 10%;
+    }
+    .punchline{
+        text-align: right;
+        h4{
+            margin-right: 30%;
+        }
+        .txt-1{
+            margin-right: 5%;
+            margin-top: -30px;
+            margin-bottom: -30px;
+        }
+    }
+    blockquote{
+        margin-right: 0;
+        margin-top: 30px;
+    }
+}
+
+.about-red{
+    .punchline{
+        text-align: center;
+    }
+    blockquote{
+        margin-top: 30px;
     }
 }

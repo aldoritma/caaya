@@ -14,7 +14,7 @@
 	display: inline-block !important;
 }
 .d-block{
-	display: block;
+	display: bloc
 }
 .center-absolute{
 	@include center-absolute;
@@ -35,6 +35,9 @@
 	&--right{
 		text-align: right;
 	}
+}
+.l-fh{
+	min-height: 100vh;
 }
 
 

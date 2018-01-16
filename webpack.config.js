@@ -21,9 +21,11 @@ var cssConfig = isProd ? cssProd : cssDev;
 
 
 module.exports = {
-	devtool: '--no-sourcemap',
+	devtool: 'source-map',
 	entry: {
-		app: src +'/app.js'
+		// app: src +'/app.js',
+		home: src + '/js/home.js',
+		about: src + '/js/about.js'
 		// vendor: ['gsap']
 	},
 	output: {
@@ -98,13 +100,13 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			hash: true,
 			template: './src/index.html',
-			// chunks: ['vendor/commons.js', 'app']
+			chunks: ['home']
 		}),
 		new HtmlWebpackPlugin({
 			hash: true,
 			filename: 'about.html',
 			template: './src/about.html',
-			// chunks: ['vendor/commons.js', 'app']
+			chunks: ['about']
 		}),
 		new ExtractTextPlugin({
             filename: 'app.css',
