@@ -21,7 +21,7 @@ var cssConfig = isProd ? cssProd : cssDev;
 
 
 module.exports = {
-	devtool: 'inline-source-map',
+	devtool: '--no-sourcemap',
 	entry: {
 		app: src +'/app.js'
 		// vendor: ['gsap']

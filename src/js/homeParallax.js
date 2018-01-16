@@ -1,7 +1,6 @@
 import TweenMax from 'gsap';
 import ScrollMagic from 'scrollmagic';
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js';
-import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
 
 let controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onLeave" } });
 let controllerEnter = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter" } });
