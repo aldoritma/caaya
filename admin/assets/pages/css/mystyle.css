@@ -1,0 +1,26 @@
+.dataTables_wrapper .cs-wrapper{
+	float: right;
+}
+.validation-form {
+	font-size:12px;
+	color:#F00;
+}
+.dataTables_wrapper .pagination{
+  background: none !important;
+}
+
+.dataTables_wrapper .pagination ul{
+  margin-top: 0 !important;
+}
+
+.boxPagingtwo{width:100%;float:left;margin-left:5px;margin-bottom:10px;text-align:center;padding:5px}
+div.grayr{font-size:14px;padding:10px 15px 10px 15px}div
+.grayr a{padding:10px 15px 10px 15px;margin:2px;background-color:#f0f0f0;text-decoration:none;color:#aaaaab}
+div.grayr a:hover,div.grayr a:active{background-color:#89d5ce;color:#aaaaab}
+div.grayr span.current{padding:10px 15px 10px 15px;margin:2px;font-weight:bold;background-color:#10cfbd;color:#303030}
+div.grayr span.disabled{ppadding:10px 15px 10px 15px;margin:2px;background-color:#f0f0f0;color:#89cec7}
+div.pagination{font-size:11px;font-family:Tahoma,Arial,Helvetica,Sans-serif;padding:2px;background-color:#f0f0f0}
+div.pagination a{padding:2px 5px 2px 5px;margin:2px;background-color:#f0f0f0;text-decoration:none;color:#000}
+div.pagination a:hover,div.pagination a:active{background-color:#eeeeee;color:#aaaaab}
+div.pagination span.current{padding:2px 5px 2px 5px;margin:2px;font-weight:bold;background-color:#fff;color:#303030}
+div.pagination span.disabled{padding:2px 5px 2px 5px;margin:2px;background-color:#f0f0f0;color:#89cec7}
