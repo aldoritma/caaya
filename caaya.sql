@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 17, 2018 at 02:53 PM
+-- Generation Time: Jan 17, 2018 at 04:00 PM
 -- Server version: 5.6.35
 -- PHP Version: 5.6.30
 
@@ -32,7 +32,7 @@ CREATE TABLE `ci_sessions_adm` (
 --
 
 INSERT INTO `ci_sessions_adm` (`id`, `ip_address`, `timestamp`, `data`) VALUES
-('2e3cd4687ba7e853dc613b1e9de4c69f81bff0f0', '::1', 1516175402, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137303430303b69645f757365727c733a323a223136223b757365726e616d657c733a383a2264656469726f6d65223b6e616d615f6c656e676b61707c733a393a224465646920526f6d65223b656d61696c7c733a303a22223b6e6f5f74656c707c733a31303a2231323334353637383930223b666f746f7c733a303a22223b6c6576656c7c733a353a2261646d696e223b626c6f6b69727c733a313a224e223b757365725f747970655f69647c733a313a2230223b69645f73657373696f6e7c733a303a22223b736573735f61646d696e7c623a313b);
+('2e3cd4687ba7e853dc613b1e9de4c69f81bff0f0', '::1', 1516179625, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137303430303b69645f757365727c733a323a223136223b757365726e616d657c733a383a2264656469726f6d65223b6e616d615f6c656e676b61707c733a393a224465646920526f6d65223b656d61696c7c733a303a22223b6e6f5f74656c707c733a31303a2231323334353637383930223b666f746f7c733a303a22223b6c6576656c7c733a353a2261646d696e223b626c6f6b69727c733a313a224e223b757365725f747970655f69647c733a313a2230223b69645f73657373696f6e7c733a303a22223b736573735f61646d696e7c623a313b);
 
 -- --------------------------------------------------------
 
@@ -67,7 +67,9 @@ INSERT INTO `ci_sessions_front` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('3f1f67775bbbfa7d30229ea95741250b59499fa1', '::1', 1516171317, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137313237393b),
 ('c0114cc612d7b6a3f6ae4eb53560dfc08c1c8673', '::1', 1516171851, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137313630313b),
 ('9a13b3a9f8afa102ba4f3371854c91dd0b5cba63', '::1', 1516172287, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137323237383b),
-('3f531bc75d85e327640558628bbf57332880b960', '::1', 1516175116, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137353037363b);
+('3f531bc75d85e327640558628bbf57332880b960', '::1', 1516175116, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137353037363b),
+('3730a1a83fe59d5045d8e1a10c2f1a53a1186139', '::1', 1516175825, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137353737323b),
+('785ff4d6e43d8fd5cec3c9701527ab467906c6e9', '::1', 1516179561, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531363137393439343b);
 
 -- --------------------------------------------------------
 
@@ -140,195 +142,33 @@ CREATE TABLE `tbl_log` (
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `tbl_log`
+-- Table structure for table `tbl_member`
 --
 
-INSERT INTO `tbl_log` (`id`, `username`, `userid`, `activity_type`, `account_type`, `level`, `status`, `message`, `url`, `ip_address`, `user_agent`, `created`) VALUES
-(1, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', '', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-28 10:47:36'),
-(2, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', '', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-28 16:43:16'),
-(3, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', '', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-28 16:43:35'),
-(4, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', '', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-28 21:06:02'),
-(5, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', '', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-28 21:07:00'),
-(6, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', '', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-28 21:07:44'),
-(7, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-30 12:04:33'),
-(8, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-30 15:45:36'),
-(9, 'admin', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:46:02'),
-(10, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:46:06'),
-(11, 'admin', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:10'),
-(12, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:14'),
-(13, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:34'),
-(14, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:37'),
-(15, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:39'),
-(16, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:42'),
-(17, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:44'),
-(18, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:46'),
-(19, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:48'),
-(20, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:51'),
-(21, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:53'),
-(22, 'Dedi Rome', NULL, 'delete roles permission', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-30 15:47:55'),
-(23, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-30 15:53:38'),
-(24, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-30 16:23:15'),
-(25, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-30 18:16:57'),
-(26, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 13:44:04'),
-(27, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 13:45:18'),
-(28, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 13:50:28'),
-(29, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-31 14:05:04'),
-(30, 'Yoga', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 14:24:45'),
-(31, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 14:25:04'),
-(32, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-31 16:38:33'),
-(33, 'admin', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-10-31 17:24:35'),
-(34, 'ashianti', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 21:09:35'),
-(35, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-10-31 21:09:46'),
-(36, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-31 22:04:57'),
-(37, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-31 22:39:33'),
-(38, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-10-31 22:47:40'),
-(39, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-01 08:49:44'),
-(40, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-01 09:18:23'),
-(41, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-01 11:44:37'),
-(42, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-01 13:08:26'),
-(43, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-01 14:01:36'),
-(44, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-01 15:17:09'),
-(45, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-01 15:28:14'),
-(46, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-01 15:43:57'),
-(47, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-01 16:03:08'),
-(48, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-01 20:46:53'),
-(49, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-01 20:49:07'),
-(50, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-01 20:50:21'),
-(51, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-01 22:03:46'),
-(52, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '111.95.154.169', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-01 23:01:51'),
-(53, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '111.95.154.169', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-01 23:18:11'),
-(54, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.62.17.173', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-02 07:44:38'),
-(55, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-02 09:26:11'),
-(56, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-02 13:00:10'),
-(57, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36', '2017-11-02 13:06:18'),
-(58, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-02 14:55:29'),
-(59, 'ashanti', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-02 17:53:04'),
-(60, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-02 18:52:29'),
-(61, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-03 13:14:07'),
-(62, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-03 17:52:49'),
-(63, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-03 18:47:26'),
-(64, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-05 22:42:58'),
-(65, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-06 11:58:59'),
-(66, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-06 13:43:43'),
-(67, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-06 13:51:39'),
-(68, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-06 13:54:27'),
-(69, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-06 14:10:38'),
-(70, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-06 14:19:04'),
-(71, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-06 15:11:19'),
-(72, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-06 15:24:57'),
-(73, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-06 16:24:07'),
-(74, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-06 17:41:08'),
-(75, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-06 21:14:01'),
-(76, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '180.252.113.215', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36', '2017-11-06 22:50:55'),
-(77, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 11:29:28'),
-(78, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-07 11:56:13'),
-(79, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 12:01:10'),
-(80, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-07 12:20:06'),
-(81, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 12:20:32'),
-(82, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 12:21:19'),
-(83, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 12:26:50'),
-(84, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 12:27:44'),
-(85, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-07 15:32:44'),
-(86, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-07 18:29:20'),
-(87, 'admin', NULL, 'login', 'admin', '', 'failed', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 02:18:39'),
-(88, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 02:18:45'),
-(89, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 02:22:26'),
-(90, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 02:42:08'),
-(91, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 02:44:35'),
-(92, 'yoga', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0', '2017-11-08 08:00:02'),
-(93, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 13:42:54'),
-(94, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36', '2017-11-08 14:04:30'),
-(95, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Safari/604.1.38', '2017-11-08 15:41:26'),
-(96, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Safari/604.1.38', '2017-11-08 15:41:37'),
-(97, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 17:03:22'),
-(98, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-08 17:11:01'),
-(99, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Safari/604.1.38', '2017-11-09 01:58:57'),
-(100, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-09 02:31:37'),
-(101, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5', '2017-11-09 02:41:05'),
-(102, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5', '2017-11-09 03:18:53'),
-(103, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5', '2017-11-09 03:41:31'),
-(104, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '139.0.173.196', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5', '2017-11-09 03:45:46'),
-(105, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-09 15:42:48'),
-(106, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '180.252.113.215', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36', '2017-11-09 21:29:56'),
-(107, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 02:23:42'),
-(108, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 04:32:43'),
-(109, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 05:00:34'),
-(110, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 05:00:39'),
-(111, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 10:20:03'),
-(112, 'lisda', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 10:20:12'),
-(113, 'lisda', NULL, 'login', 'admin', '', 'failed', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 10:20:19'),
-(114, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-10 16:02:29'),
-(115, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-10 22:20:09'),
-(116, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '158.140.161.52', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-11 08:21:37'),
-(117, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '158.140.161.52', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-11 14:26:56'),
-(118, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-11 14:38:45'),
-(119, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '158.140.161.52', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-11 14:54:29'),
-(120, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '158.140.161.52', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-12 07:56:07'),
-(121, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-12 18:22:34'),
-(122, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-13 14:57:18'),
-(123, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-13 14:57:23'),
-(124, 'radit', 41, 'Create news', 'admin', 'admin', 'success', 'create news id 76', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-13 15:19:45'),
-(125, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-13 16:48:12'),
-(126, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-14 13:48:23'),
-(127, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-15 02:19:18'),
-(128, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.62.17.85', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-15 21:10:15'),
-(129, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', '2017-11-16 13:28:48'),
-(130, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-16 13:30:54'),
-(131, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-16 15:49:11'),
-(132, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-16 18:15:43'),
-(133, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-17 15:43:55'),
-(134, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-17 17:01:32'),
-(135, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-20 06:30:01'),
-(136, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-20 10:27:45'),
-(137, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-20 14:45:31'),
-(138, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-20 15:06:01'),
-(139, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-20 15:06:13'),
-(140, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-20 15:42:26'),
-(141, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-20 18:43:41'),
-(142, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-20 19:47:33'),
-(143, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '111.95.203.68', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 06:55:05'),
-(144, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 08:54:20'),
-(145, 'dedirome', 16, 'Delete Images', 'admin', 'admin', 'success', 'Delete Images id 13', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:12:42'),
-(146, 'dedirome', 16, 'Delete Images', 'admin', 'admin', 'success', 'Delete Images id 10', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:28:03'),
-(147, 'dedirome', 16, 'Delete Images', 'admin', 'admin', 'success', 'Delete Images id 11', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:29:27'),
-(148, 'dedirome', 16, 'Delete Images', 'admin', 'admin', 'success', 'Delete Images id 12', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:29:30'),
-(149, 'dedirome', 16, 'Edit Album', 'admin', 'admin', 'success', 'Edit Album id 7', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:33:57'),
-(150, 'dedirome', 16, 'Edit Album', 'admin', 'admin', 'success', 'Edit Album id 7', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:34:03'),
-(151, 'dedirome', 16, 'Delete Video', 'admin', 'admin', 'success', 'Delete Video id 14', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-21 10:40:01'),
-(152, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-21 11:22:30'),
-(153, 'avi', 40, 'Create Album', 'user', 'user', 'success', 'Create Album ', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-21 11:26:16'),
-(154, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-21 11:34:58'),
-(155, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-21 11:35:01'),
-(156, 'avi', NULL, 'login', 'admin', 'user', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-21 11:41:02'),
-(157, 'radit', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '202.137.5.125', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', '2017-11-21 11:49:22'),
-(158, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-22 06:57:56'),
-(159, 'dedirome', 16, 'Edit news', 'admin', 'admin', 'success', 'Edit news id 57', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-22 06:58:33'),
-(160, 'dedirome', 16, 'Edit news', 'admin', 'admin', 'success', 'Edit news id 57', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-22 07:11:31'),
-(161, 'dedirome', 16, 'Create news', 'admin', 'admin', 'success', 'create news id 77', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-22 07:40:09'),
-(162, 'dedirome', 16, 'Delete news', 'admin', 'admin', 'success', 'Delete news id 77', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-22 07:44:28'),
-(163, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-22 18:07:28'),
-(164, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-25 03:39:41'),
-(165, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-26 21:47:35'),
-(166, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-11-30 07:22:16'),
-(167, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-12-30 13:42:54'),
-(168, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-12-30 13:43:27'),
-(169, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2017-12-30 13:44:34'),
-(170, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', '2018-01-04 07:03:55'),
-(171, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-08 08:06:11'),
-(172, 'dedirome', 16, 'Delete news', 'admin', 'admin', 'success', 'Delete news id 76', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-08 10:10:14'),
-(173, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 04:51:34'),
-(174, 'dedirome', 16, 'Edit Category', 'admin', 'admin', 'success', 'Edit Category id 8', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 04:58:15'),
-(175, 'dedirome', 16, 'Edit Category', 'admin', 'admin', 'success', 'Edit Category id 8', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 04:58:23'),
-(176, 'dedirome', 16, 'Delete Category', 'admin', 'admin', 'success', 'Delete Category id 1', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 07:30:18'),
-(177, 'dedirome', 16, 'Delete Category', 'admin', 'admin', 'success', 'Delete Category id 4', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 07:30:21'),
-(178, 'dedirome', 16, 'Delete Category', 'admin', 'admin', 'success', 'Delete Category id 5', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 07:30:25'),
-(179, 'dedirome', 16, 'Delete Category', 'admin', 'admin', 'success', 'Delete Category id 6', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 07:30:28'),
-(180, 'dedirome', 16, 'Delete Category', 'admin', 'admin', 'success', 'Delete Category id 2', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-09 07:30:31'),
-(181, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-12 10:04:16'),
-(182, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-12 19:26:28'),
-(183, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-17 06:22:43'),
-(184, 'dedirome', NULL, 'login', 'admin', 'admin', 'success', '', NULL, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:55.0) Gecko/20100101 Firefox/55.0', '2018-01-17 06:26:44');
+CREATE TABLE `tbl_member` (
+  `id` int(11) NOT NULL,
+  `user_id` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  `name` varchar(100) COLLATE latin1_general_ci DEFAULT NULL,
+  `first_name` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `last_name` varchar(32) CHARACTER SET latin1 DEFAULT NULL,
+  `screen_name` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `provider` varchar(16) CHARACTER SET latin1 DEFAULT NULL,
+  `provider_uid` varchar(100) COLLATE latin1_general_ci DEFAULT NULL,
+  `gender` enum('MALE','FEMALE') CHARACTER SET latin1 DEFAULT 'MALE',
+  `city` varchar(150) COLLATE latin1_general_ci DEFAULT NULL,
+  `birthdate` date DEFAULT NULL,
+  `profile_url` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `profile_image_url` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `email` varchar(64) CHARACTER SET latin1 DEFAULT NULL,
+  `phone` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `location` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `ip_address` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
+  `user_agent` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `create_date` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
 
@@ -434,14 +274,7 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`id_user`, `username`, `password`, `nama_lengkap`, `email`, `no_telp`, `foto`, `level`, `blokir`, `user_type_id`, `id_session`) VALUES
-(16, 'dedirome', '873d8e0847d7ff67dc6a3c4684cb8f07', 'Dedi Rome', '', '1234567890', '', 'admin', 'N', 0, ''),
-(36, 'inasgoc', '8f1fc879906ea95c4c6c1b565f9e7336', 'Inasgoc', 'admin@inasgoc.co.id', '1234567890', '', 'user', 'N', 0, ''),
-(37, 'ashanti', '2f6278a6a17b9359b663e5d194f47d02', 'Ashanti', 'ashanti@gmail.com', NULL, NULL, 'user', 'N', NULL, NULL),
-(38, 'yoga', '32225a0a469c4fc20b4dec1677445739', 'Yoga', 'yoga@narrada.com', NULL, NULL, 'user', 'N', NULL, NULL),
-(39, 'dedirome2', 'dc2a1c3c5cb7b16ca67e8372adabf2f8', 'Dedirome2', 'dedi@narrada.com', NULL, NULL, 'admin', 'N', NULL, NULL),
-(40, 'avi', '17a74832bfa3abbf60ddacdc1e063f69', 'Avi', 'avi@narrada.com', NULL, NULL, 'user', 'N', NULL, NULL),
-(41, 'radit', '0eb602856c9cd2958aadf6aac0109d0b', 'Radit', 'radit@narrada.com', NULL, NULL, 'admin', 'N', NULL, NULL),
-(42, 'ocep', '8507fa0183579a756ac93718872d6ff3', 'Josep', 'josep@narrada.com', NULL, NULL, 'admin', 'N', NULL, NULL);
+(16, 'dedirome', '873d8e0847d7ff67dc6a3c4684cb8f07', 'Dedi Rome', '', '1234567890', '', 'admin', 'N', 0, '');
 
 -- --------------------------------------------------------
 
@@ -500,6 +333,12 @@ ALTER TABLE `tbl_log`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_member`
+--
+ALTER TABLE `tbl_member`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_menuwebsite`
 --
 ALTER TABLE `tbl_menuwebsite`
@@ -535,7 +374,12 @@ ALTER TABLE `tbl_contactus`
 -- AUTO_INCREMENT for table `tbl_log`
 --
 ALTER TABLE `tbl_log`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_member`
+--
+ALTER TABLE `tbl_member`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_menuwebsite`
 --
