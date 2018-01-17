@@ -60,7 +60,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-green", duration: "100%", offset
         scale: 1.1
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -70,7 +69,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-green", duration: "100%" })
             y: "+=30px"
         })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -81,7 +79,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-green", duration: "100%" })
         scale: 1.1
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -91,7 +88,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-green", duration: "100%", offset
         y: "+=60px"
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 new ScrollMagic.Scene({ triggerElement: ".about-green", duration: "100%", offset: 200 })
@@ -101,7 +97,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-green", duration: "100%", offset
         scale: 1.2
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -114,7 +109,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%" })
         x: "-=50px"
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -125,7 +119,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%" })
         scale: 1.1
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -136,7 +129,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%" })
         scale: 1.1
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -146,7 +138,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%", offset:
         y: "-=60px"
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%", offset: 200 })
@@ -156,7 +147,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%", offset:
         scale: 1.2
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -167,7 +157,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-blue", duration: "100%", offset:
         scale: 1.1
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -181,7 +170,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-red", duration: "100%", offset: 
         scale: 1.2
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -192,7 +180,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-red", duration: "100%", offset: 
         scale: 1.2
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -202,7 +189,6 @@ new ScrollMagic.Scene({ triggerElement: ".about-red", duration: "100%", offset: 
         y: "+=10px",
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);
 
 
@@ -212,5 +198,4 @@ new ScrollMagic.Scene({ triggerElement: ".about-red", duration: "100%", offset: 
         y: "-=60px"
     })
     )
-    .addIndicators()
     .addTo(controllerEnter);

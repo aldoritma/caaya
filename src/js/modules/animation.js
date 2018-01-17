@@ -161,16 +161,16 @@ $('.radio-btn').change(function () {
 
 
 
-$(window).scroll(function () {
-    if ($('.green').length > 0) {
-        console.log('green scrolling');
-    }
-    else if ($('.blue').length > 0) {
-        console.log('blue scrolling');
-    }
-    else {
-        console.log('red scrolling');
-    }
-});
+// $(window).scroll(function () {
+//     if ($('.green').length > 0) {
+//         console.log('green scrolling');
+//     }
+//     else if ($('.blue').length > 0) {
+//         console.log('blue scrolling');
+//     }
+//     else {
+//         console.log('red scrolling');
+//     }
+// });
 
 

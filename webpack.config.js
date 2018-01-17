@@ -23,10 +23,10 @@ var cssConfig = isProd ? cssProd : cssDev;
 module.exports = {
 	devtool: 'source-map',
 	entry: {
-		// app: src +'/app.js',
-		home: src + '/js/home.js',
-		about: src + '/js/about.js',
-		contact: src + '/js/contact.js',
+		app: src +'/app.js',
+		// home: src + '/js/home.js',
+		// about: src + '/js/about.js',
+		// contact: src + '/js/contact.js',
 
 		// vendor: ['gsap']
 	},
@@ -101,20 +101,20 @@ module.exports = {
 		// }),
 		new HtmlWebpackPlugin({
 			hash: true,
-			template: './src/index.html',
-			chunks: ['home']
+			template: './src/index.html'
+			// chunks: ['home']
 		}),
 		new HtmlWebpackPlugin({
 			hash: true,
 			filename: 'about.html',
-			template: './src/about.html',
-			chunks: ['about']
+			template: './src/about.html'
+			// chunks: ['about']
 		}),
 		new HtmlWebpackPlugin({
 			hash: true,
 			filename: 'contact.html',
-			template: './src/contact.html',
-			chunks: ['contact']
+			template: './src/contact.html'
+			// chunks: ['contact']
 		}),
 		new ExtractTextPlugin({
             filename: 'app.css',
