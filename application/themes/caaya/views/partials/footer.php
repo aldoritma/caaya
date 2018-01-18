@@ -30,7 +30,7 @@
 						</ul>
 						<ul class="list--none">
 							<li>Activity</li>
-							<li>Petualangan...</li>
+							<li>Petualangan</li>
 						</ul>
 						<ul class="list--none">
 							<li>FAQ</li>
