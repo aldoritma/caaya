@@ -1,12 +1,12 @@
-<!-- [HFG Development]  Version: 1.0.0 - 9:58:05 AM  --> 
+<!-- [HFG Development]  Version: 1.0.0 - 10:10:41 PM  --> 
  <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>About</title>
-	<link href="app.css?c69f3206c79099551640" rel="stylesheet"></head>
-	<body>
+	<link href="app.css?dc4215b9f9cfd827752f" rel="stylesheet"></head>
+	<body id="about">
 		<noscript>Your browser does not support JavaScript!</noscript>
 		<header class="header">
 			<div class="hamburger-menu">
@@ -15,78 +15,231 @@
 			<a href="index.html" class="logo">
 				<img src="img/logo.png" alt="">
 			</a>
+			<nav class="main-navigation aligner">
+				<div class="">
+					<ul class="list--none">
+						<li>
+							<a href="#" class="is-active">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Activity</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li class="nav-socmed">
+							<a href="#">
+								<img src="img/ic-nav-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="img/ic-nav-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="img/ic-nav-3.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 		<main class="about">
-			<section class="hero aligner">
-				<div class="hero-wrapper">
-					<h1>About Caaya</h1>
-					<h3 class="entrance-text">and How We Crafted It</h3>
-					<img class="img-hero"src="img/about-hero.png" alt="">
-					<p>Caaya adalah keinginan untuk mempersatukan berbagai<br>elemen terbaik teh Indonesia, sebuah perjalanan untuk<br>menemukan kembali
-					rasa teh Indonesia sebenarnya.</p>
-				</div>
-			</section>
-			<section class="l-fh about-green">
-				<div class="bg-par"><img src="img/about-bg-green.png" alt=""></div>
-				<div class="row clearfix about-wrapper">
-					<div class="col-4">
-						<img class="about-bottle" src="img/about-btl-green.png" alt="">
-					</div>
-					<div class="punchline col-8">
-						<h4>revive me</h4>
-						<h2>jasmine</h2>
-						<blockquote>
-							<p>Teh diperkenalkan pertama kali di Indonesia tahun 1684 oleh<br>ahli botani Jerman, Andreas Cleyer yang bekerja untuk VOC.<br>Awalnya
-							tanaman teh ditanam sebagai tanaman hias.</p>
-							<a href="#" class="fact">Tea Fact <img src="img/arrow-left.png" alt=""></a>
-						</blockquote>
+			<div class="about-hero">
+				<div class="container">
+					<div class="about-hero-d">
+						<h1>How We Crafted It</h1>
+						<div class="desc">
+							<span></span>
+							<p>Terinspirasi dari dua hal yang paling membanggakan<br>bagi Indonesia yaitu kekayaan budaya & kekayaan<br>alam nusantara, Caaya
+							mengajak Anda untuk<br>menemukan kembali rasa teh yang sebenarnya</p>
+						</div>
 					</div>
 				</div>
-			</section>
-			<section class="l-fh about-blue">
-				<div class="bg-par">
-					<img src="img/about-bg-blue.png" alt="">
-				</div>
-				<div class="row clearfix about-wrapper">
-					<div class="punchline col-8">
-						<h4>soothe me</h4>
-						<h2 class="txt-1">vanilla</h2>
-						<h2 class="txt-2">pandan</h2>
-						<blockquote>
-							<p>Teh diperkenalkan pertama kali di Indonesia tahun 1684 oleh
-							<br>ahli botani Jerman, Andreas Cleyer yang bekerja untuk VOC.
-							<br>Awalnya tanaman teh ditanam sebagai tanaman hias.</p>
-							<a href="#" class="fact">Tea Fact<img src="img/arrow-left.png" alt=""></a>
-						</blockquote>
-					</div>
-					<div class="col-4">
-						<img class="about-bottle" src="img/about-btl-blue.png" alt="">
-					</div>
-				</div>
-			</section>
-			<section class="l-fh about-red">
-				<div class="bg-par">
-					<img src="img/about-bg-red.png" alt="">
-				</div>
-				<div class="row clearfix about-wrapper">
-					<div class="col-4">
-						<img class="about-bottle" src="img/about-btl-red.png" alt="">
-					</div>
-					<div class="punchline col-8">
-						<h4>power me</h4>
-						<h2 class="get-bigger">toasted</h2>
-						<h2>rice</h2>
-						<blockquote>
-							<p>Teh diperkenalkan pertama kali di Indonesia tahun 1684 oleh
-								<br>ahli botani Jerman, Andreas Cleyer yang bekerja untuk VOC.
-								<br>Awalnya tanaman teh ditanam sebagai tanaman hias.</p>
-							<a href="#" class="fact">Tea Fact
-								<img src="img/arrow-left.png" alt="">
-							</a>
-						</blockquote>
+			</div>
+			<div class="about-detail" id="about-slider">
+				<div class="container about-detail-wrapper">
+					<figure class="detail-img aligner">
+						<img src="img/about-slide1.png" alt="">
+					</figure>
+					<div class="about-desc">
+						<div class="wrap-desc">
+							<h3><span class="align--left">Paduan</span> Teh Caaya</h3>
+							<div class="slider-container">
+								<div class="slider-item">
+									<p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
+										sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+								</div>
+								<div class="slider-item">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores illum
+										facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+								</div>
+								<div class="slider-item">
+									<p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
+										expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+								</div>
+							</div>
+							<div class="slider-nav">
+								<span class="arrow arrow-prev"><i class="demo-icon icon-angle-left"></i></span>
+								<div class="dots"></div>
+								<span class="arrow arrow-next"><i class="demo-icon icon-angle-right"></i></span>
+							</div>
+							<a href="#" class="button-green"><i class="demo-icon icon-angle-left"></i>Back</a>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			<div class="about-detail" id="about-slider2">
+				<div class="container about-detail-wrapper">
+					<figure class="detail-img aligner">
+						<img src="img/about-slide2.png" alt="">
+					</figure>
+					<div class="about-desc">
+						<div class="wrap-desc">
+							<h3>Melati</h3>
+							<div class="slider-container">
+								<div class="slider-item">
+									<p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
+										sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+								</div>
+								<div class="slider-item">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores illum
+										facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+								</div>
+								<div class="slider-item">
+									<p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
+										expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+								</div>
+							</div>
+							<div class="slider-nav">
+								<span class="arrow arrow-prev">
+									<i class="demo-icon icon-angle-left"></i>
+								</span>
+								<div class="dots"></div>
+								<span class="arrow arrow-next">
+									<i class="demo-icon icon-angle-right"></i>
+								</span>
+							</div>
+							<a href="#" class="button-green">
+								<i class="demo-icon icon-angle-left"></i>Back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-detail" id="about-slider3">
+				<div class="container about-detail-wrapper">
+					<figure class="detail-img aligner">
+						<img src="img/about-slide3.png" alt="" style="margin-top: -200px;">
+					</figure>
+					<div class="about-desc">
+						<div class="wrap-desc">
+							<h3 style="margin-left: -200px;">Daun</h3>
+							<h3 style="margin-right: -120px;">Pandan</h3>
+							<div class="slider-container">
+								<div class="slider-item">
+									<p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
+										sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+								</div>
+								<div class="slider-item">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores
+										illum facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+								</div>
+								<div class="slider-item">
+									<p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit
+									incidunt expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+								</div>
+							</div>
+							<div class="slider-nav">
+								<span class="arrow arrow-prev">
+									<i class="demo-icon icon-angle-left"></i>
+								</span>
+								<div class="dots"></div>
+								<span class="arrow arrow-next">
+									<i class="demo-icon icon-angle-right"></i>
+								</span>
+							</div>
+							<a href="#" class="button-green">
+								<i class="demo-icon icon-angle-left"></i>Back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-detail" id="about-slider4">
+				<div class="container about-detail-wrapper">
+					<figure class="detail-img aligner">
+						<img src="img/about-slide4.png" alt="">
+					</figure>
+					<div class="about-desc">
+						<div class="wrap-desc">
+							<h3>Vanilla</h3>
+							<div class="slider-container">
+								<div class="slider-item">
+									<p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
+										sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+								</div>
+								<div class="slider-item">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores illum
+										facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+								</div>
+								<div class="slider-item">
+									<p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
+										expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+								</div>
+							</div>
+							<div class="slider-nav">
+								<span class="arrow arrow-prev">
+									<i class="demo-icon icon-angle-left"></i>
+								</span>
+								<div class="dots"></div>
+								<span class="arrow arrow-next">
+									<i class="demo-icon icon-angle-right"></i>
+								</span>
+							</div>
+							<a href="#" class="button-green">
+								<i class="demo-icon icon-angle-left"></i>Back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-detail" id="about-slider5">
+				<div class="container about-detail-wrapper">
+					<figure class="detail-img aligner">
+						<img src="img/about-slide1.png" alt="">
+					</figure>
+					<div class="about-desc">
+						<div class="wrap-desc">
+							<h3 style="margin-left: -150px;">Beras</h3>
+							<h3 style="margin-right: -50px;">Sangrai</h3>
+							<div class="slider-container">
+								<div class="slider-item">
+									<p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
+										sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+								</div>
+								<div class="slider-item">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores illum
+										facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+								</div>
+								<div class="slider-item">
+									<p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
+										expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+								</div>
+							</div>
+							<div class="slider-nav">
+								<span class="arrow arrow-prev">
+									<i class="demo-icon icon-angle-left"></i>
+								</span>
+								<div class="dots"></div>
+								<span class="arrow arrow-next">
+									<i class="demo-icon icon-angle-right"></i>
+								</span>
+							</div>
+							<a href="#" class="button-green">
+								<i class="demo-icon icon-angle-left"></i>Back</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<section class="store-locator">
@@ -138,5 +291,6 @@
 
 			</section>
 		</footer>
-	<script type="text/javascript" src="app.bundle.js?c69f3206c79099551640"></script></body>
+		<div class="overlay"></div>
+	<script type="text/javascript" src="app.bundle.js?dc4215b9f9cfd827752f"></script></body>
 </html> 
