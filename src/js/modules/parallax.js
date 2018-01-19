@@ -361,6 +361,7 @@ if ($('#about').length > 0) {
         let movementStrength = 25;
         let height = movementStrength / $(window).height();
         let width = movementStrength / $(window).width();
+
         $(".about-hero").mousemove(function (e) {
             let pageX = e.pageX - ($(window).width() / 2);
             let pageY = e.pageY - ($(window).height() / 2);
@@ -369,10 +370,13 @@ if ($('#about').length > 0) {
             $('.about-hero').css("background-position", newvalueX + "px     " + newvalueY + "px");
         });
 
+        let controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onLeave" } });
+        let controllerEnter = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter" } });
+
         new ScrollMagic.Scene({ triggerElement: "#about-slider", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider .wrap-desc', 0.7, {
-                y: "-=50px"
+                y: "-=60px"
             })
             )
             .addTo(controllerEnter);
@@ -380,7 +384,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider .detail-img', 0.7, {
-                y: "+=50px"
+                y: "+=60px"
             })
             )
             .addTo(controllerEnter);
@@ -388,7 +392,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider2", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider2 .wrap-desc', 0.7, {
-                y: "+=50px"
+                y: "+=60px"
             })
             )
             .addTo(controllerEnter);
@@ -396,7 +400,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider2", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider2 .detail-img', 0.7, {
-                y: "-=50px"
+                y: "-=60px"
             })
             )
             .addTo(controllerEnter);
@@ -404,7 +408,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider3", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider3 .wrap-desc', 0.7, {
-                y: "-=50px"
+                y: "-=60px"
             })
             )
             .addTo(controllerEnter);
@@ -412,7 +416,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider3", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider3 .detail-img', 0.7, {
-                y: "+=50px"
+                y: "+=60px"
             })
             )
             .addTo(controllerEnter);
@@ -420,7 +424,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider4", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider4 .wrap-desc', 0.7, {
-                y: "+=50px"
+                y: "+=60px"
             })
             )
             .addTo(controllerEnter);
@@ -428,7 +432,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider4", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider4 .detail-img', 0.7, {
-                y: "-=50px"
+                y: "-=60px"
             })
             )
             .addTo(controllerEnter);
@@ -436,7 +440,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider5", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider5 .wrap-desc', 0.7, {
-                y: "-=50px"
+                y: "-=60px"
             })
             )
             .addTo(controllerEnter);
@@ -444,7 +448,7 @@ if ($('#about').length > 0) {
         new ScrollMagic.Scene({ triggerElement: "#about-slider5", duration: "100%", offset: 0 })
             .setTween(
             TweenMax.to('#about-slider5 .detail-img', 0.7, {
-                y: "+=50px"
+                y: "+=60px"
             })
             )
             .addTo(controllerEnter);
@@ -457,6 +461,7 @@ if ($('#about').length > 0) {
     new ScrollMagic.Scene({ triggerElement: ".about-detail", duration: windowH })
         .setClassToggle('#about .header .logo img', 'blacked')
         .addTo(controller);
+        console.log('about-para');
 
     let stag3 = new TimelineMax();
     stag3.add([
