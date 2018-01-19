@@ -1,4 +1,4 @@
-<!-- [HFG Development]  Version: 1.0.0 - 10:10:41 PM  --> 
+<!-- [HFG Development]  Version: 1.0.0 - 8:34:53 PM  --> 
  <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
-<link href="app.css?dc4215b9f9cfd827752f" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+<link href="app.css?3a8564940727efa3167f" rel="stylesheet"></head>
 
 <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -17,32 +18,61 @@
         <a href="index.html" class="logo">
             <img src="img/logo.png" alt="">
         </a>
-    </header>
-    <main class="contact">
-        <div class="contact-header">
-            <div class="container">
-                <h1>Contact</h1>
+        <nav class="main-navigation aligner">
+            <div class="">
+                <ul class="list--none">
+                    <li>
+                        <a href="#" class="is-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Activity</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li class="nav-socmed">
+                        <a href="#">
+                            <img src="img/ic-nav-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ic-nav-2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ic-nav-3.png" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    <main class="contact" id="contact">
+        <div class="section-header contact-header">
+            <h1>Contact</h1>
         </div>
         <div class="main-contact clearfix">
             <div class="col-8 contact-form">
-                <h3>Just say hi!</h3>
-                <p>Tell us more about you and we’ll contact you soon :)</p>
+                <div class="header-title">
+                    <h3>Form Pertanyaan!</h3>
+                    <p>Isi data diri dan pertanyaan Anda pada form di bawah ini.</p>
+                </div>
                 <form action="">
                     <div class="clearfix wrap">
                         <div class="input-container col-6">
                             <input type="text" id="input-name" class="input-text">
-                            <label for="input-name" unselectable="on">Name</label>
+                            <label for="input-name" unselectable="on">Nama</label>
                         </div>
                         <div class="input-container col-6">
                             <input type="text" id="input-first" class="input-text">
-                            <label for="input-first" unselectable="on">First Name</label>
+                            <label for="input-first" unselectable="on">Telephone</label>
                         </div>
                     </div>
                     <div class="clearfix wrap">
                         <div class="input-container col-6">
                             <input type="email" id="input-email" class="input-text">
-                            <label for="input-email" unselectable="on">Email</label>
+                            <label for="input-email" unselectable="on">Ponsel</label>
                         </div>
                         <div class="input-container col-6">
                             <input type="text" id="input-phone" class="input-text">
@@ -50,12 +80,48 @@
                         </div>
                     </div>
                     <div class="clearfix wrap">
-                        <div class="input-container no-pad-r col-10">
-                            <input type="email" id="input-msg" class="input-text">
-                            <label for="input-msg" unselectable="on">Message</label>
+                        <div class="input-container container-select col-6">
+                            <span>Kategori</span>
+                            <div class="select">
+                                <select name="slct" id="slct">
+                                    <option>Choose an option</option>
+                                    <option value="1">Pure CSS</option>
+                                    <option value="2">No JS</option>
+                                    <option value="3">Nice!</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="input-container no-pad col-2">
-                            <button type="button" class="button-submit">Submit</button>
+                        <div class="input-container no-pad-r col-6">
+                            <input type="text" id="input-alamat" class="input-text">
+                            <label for="input-alamat" unselectable="on">Alamat</label>
+                        </div>
+                    </div>
+                    <div class="clearfix wrap">
+                        <div class="input-container col-12">
+                            <textarea name="" id="input-message " class="textarea input-text"></textarea>
+                            <label for="input-message" unselectable="on" id="lbl-msg">Message</label>
+                        </div>
+                    </div>
+                    <div class="clearfix wrap sp-mbl">
+                        <div class="captcha">
+                            <div class="input-container col-2">
+                                <span>Captcha</span>
+                            </div>
+                            <div class="captcha-input input-container col-3">
+                                <input type="text" id="mainCaptcha" disabled="disabled" />
+                                <input type="button" id="refresh" value="Click to change" />
+                                <button type="button" id="submit-btn" class="button-submit">Kirim</button>
+                            </div>
+                            <div class="captcha-output input-container col-3">
+                                <input type="text" id="captchaInput" class="input-text inline-block">
+                                <label for="captchaInput" unselectable="on">Masukkan Captcha</label>
+                                <div class="notif-captcha formcontent" style="display:none;">
+                                    Awesome!
+                                </div>
+                                <div class="notif-captcha captache-error" style="display:none;">
+                                    Wrong captcha, try Again
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -137,6 +203,7 @@
 
         </section>
     </footer>
-<script type="text/javascript" src="app.bundle.js?dc4215b9f9cfd827752f"></script></body>
+    <div class="overlay"></div>
+<script type="text/javascript" src="app.bundle.js?3a8564940727efa3167f"></script></body>
 
 </html> 

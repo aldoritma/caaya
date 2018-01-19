@@ -355,3 +355,126 @@ if ($('#home').length > 0) {
     });
 
 }
+
+if ($('#about').length > 0) {
+    if ($(window).width() > 768) {
+        let movementStrength = 25;
+        let height = movementStrength / $(window).height();
+        let width = movementStrength / $(window).width();
+        $(".about-hero").mousemove(function (e) {
+            let pageX = e.pageX - ($(window).width() / 2);
+            let pageY = e.pageY - ($(window).height() / 2);
+            let newvalueX = width * pageX * -1 - 25;
+            let newvalueY = height * pageY * -1 - 50;
+            $('.about-hero').css("background-position", newvalueX + "px     " + newvalueY + "px");
+        });
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider .wrap-desc', 0.7, {
+                y: "-=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider .detail-img', 0.7, {
+                y: "+=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider2", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider2 .wrap-desc', 0.7, {
+                y: "+=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider2", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider2 .detail-img', 0.7, {
+                y: "-=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider3", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider3 .wrap-desc', 0.7, {
+                y: "-=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider3", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider3 .detail-img', 0.7, {
+                y: "+=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider4", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider4 .wrap-desc', 0.7, {
+                y: "+=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider4", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider4 .detail-img', 0.7, {
+                y: "-=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider5", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider5 .wrap-desc', 0.7, {
+                y: "-=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+        new ScrollMagic.Scene({ triggerElement: "#about-slider5", duration: "100%", offset: 0 })
+            .setTween(
+            TweenMax.to('#about-slider5 .detail-img', 0.7, {
+                y: "+=50px"
+            })
+            )
+            .addTo(controllerEnter);
+
+    }
+
+    let controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onLeave" } });
+    let controllerEnter = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter" } });
+    let windowH = $(document).height();
+    new ScrollMagic.Scene({ triggerElement: ".about-detail", duration: windowH })
+        .setClassToggle('#about .header .logo img', 'blacked')
+        .addTo(controller);
+
+    let stag3 = new TimelineMax();
+    stag3.add([
+        TweenMax.to('.about-hero .about-hero-d .line', 0.6, {
+            width: "68px",
+            opacity: 1,
+            delay: 1,
+            ease: Power1.easeOut
+        }),
+        TweenMax.to('.about-hero .about-hero-d p', 1, {
+            x: 0,
+            opacity: 1,
+            delay: 1.8,
+            ease: Back.easeOut.config(1.7)
+        }),
+    ]);
+
+
+
+
+}

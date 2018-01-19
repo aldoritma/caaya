@@ -342,23 +342,32 @@
 #about{
     .header .logo img{
         filter: invert(100%);
+        &.blacked{
+            filter: invert(0);
+        }
     }
 }
 .about-hero{
     min-height: 90vh;
     background: url(img/about-bg.jpg) no-repeat;
-    background-size: cover;
+    background-position: -25px -50px;
     position: relative;
+    background-attachment: fixed;
+    background-size: calc(100% + 50px);
     .about-hero-d{
         color: white;
         h1{
             @include font-size(84px);
             margin: 0;
             margin-bottom: 20px;
+            span{
+                transform-origin: bottom;
+                display: inline-block;
+            }
         }
-        span{
+        .line{
             display: inline-block;
-            width: 68px;
+            width: 0;
             height: 2px;
             background:  white;
             vertical-align: top;
@@ -370,6 +379,8 @@
             margin: 0;
             vertical-align: top;
             margin-left: 20px;
+            @include transform(translateX(-30px));
+            opacity: 0;
         }
     }
 }
@@ -390,6 +401,8 @@
     .wrap-desc{
         width: 480px;
         text-align: center;
+        display: block;
+        margin: 0 auto;
     }
 
 }
@@ -424,7 +437,7 @@
 }
 
 .about-detail{
-    padding: 50px 0;
+    padding: 100px 0;
     position: relative;
     background: url(img/layer-odd.png) no-repeat;
     background-position: bottom left;
@@ -468,18 +481,30 @@
 
 
 
-.contact-header{
+.section-header{
     height: 240px;
     display: block;
     position: relative;
-    background: url(img/contact-bg.jpg) no-repeat;
-    background-size: cover;
-}
-.contact{
+    padding: 0 100px;
+    overflow: hidden;
+    &.contact-header{
+        background: url(img/contact-bg.jpg) no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    &.faq-header{
+        background: url(img/faq-bg.jpg) no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
     h1{
         color: white;
         @include font-size(96px);
+        margin: 0;
+        margin-top: 50px;
     }
+}
+.header-title{
     h3{
         color: #333333;
         @include font-size(18px);
@@ -489,10 +514,10 @@
 }
 .contact-information{
     background: #f7f7f7;
-    padding: 50px 80px;
+    padding: 50px 100px;
 }
 .contact-form{
-    padding: 50px 80px;
+    padding: 50px 100px;
     background: white;
     .wrap{
         margin-left: -20px;
@@ -533,4 +558,10 @@
     img{
         max-width: 100%;
     }
+}
+
+
+#lbl-msg{
+    top: 30px;
+    bottom: auto;
 }

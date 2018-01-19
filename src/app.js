@@ -2,6 +2,8 @@ import css from './style.scss';
 require('./js/modules/animation.js');
 require('./js/modules/parallax.js');
 require('./js/modules/slider.js');
+require('./js/modules/captcha.js');
+require('./js/modules/tabs.js');
 
 
 
@@ -31,9 +33,11 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-    let contactH = $(".contact-form").height();
-    $(".contact-information").height(contactH)
-    let equalTo = $('.mega-footer .col-10').height();
-    $('.footer-logo').height(equalTo);
+    if ($(window).width() > 768) {
+        let contactH = $(".contact-form").height();
+        $(".contact-information").height(contactH)
+        let equalTo = $('.mega-footer .col-10').height();
+        $('.footer-logo').height(equalTo);
+    }
 });
 

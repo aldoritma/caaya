@@ -7,6 +7,9 @@
         width: 960px;
     }
 }
+.fluid-container{
+	padding: 50px 100px;
+}
 .row, .clearfix{
 	@include clearfix;
 }

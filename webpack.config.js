@@ -116,6 +116,12 @@ module.exports = {
 			template: './src/contact.html'
 			// chunks: ['contact']
 		}),
+		new HtmlWebpackPlugin({
+			hash: true,
+			filename: 'faq.html',
+			template: './src/faq.html'
+			// chunks: ['contact']
+		}),
 		new ExtractTextPlugin({
             filename: 'app.css',
             disable: !isProd,

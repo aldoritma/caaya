@@ -75,3 +75,7 @@ if ($('#home').length > 0) {
     ]);
 
 }
+
+if ($('#about').length > 0) {
+    textEntrance(splitText('h1'), 1, 0.7)
+}
