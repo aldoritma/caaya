@@ -1,5 +1,10 @@
 import Slick from 'slick-carousel'
-
+$('.hide-parent').click(function(e) {
+    e.preventDefault();
+    $(this).parent().hide();
+    $(this).parent().siblings().show();
+    $(this).parent().siblings().find('.slider-container').slick('refresh');;
+});
 $('#about-slider .slider-container').slick({
     slides: '.slider-item',
     arrows: true,

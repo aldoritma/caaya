@@ -12,6 +12,7 @@
 	}
 	.bg-par {
 		height: 100%;
+		left: -80%;
 		img{
 			width: auto;
 			height: 100%;
@@ -22,11 +23,7 @@
 	}
 	.section-hero .jasmine-copy h2{
 		@include font-size(160px);
-		margin-top: -80px;
-	}
-	.section-hero .bottle-wrapper .img-bot,
-	.section-hero .bottle-wrapper .img-jas{
-		max-width: 40%;
+		margin-top: 40px;
 	}
 	.main-content .product-desc{
 		padding: 30px;
@@ -147,6 +144,14 @@
 	.accordion p{
 		@include font-size(16px);
 	}
+	.section-hero .bottle-wrapper{
+		left: auto;
+		right: 0;
+		bottom: -32%;
+	}
+	#img-rice{
+		display: none;
+	}
 }
 
 
@@ -175,10 +180,53 @@
 		bottom: 5%;
 	}
 	.section-hero .bottle-wrapper .img-bot, .section-hero .bottle-wrapper .img-jas{
-		max-width: 50%;
+	}
+	.section-hero .jasmine-copy{
+		top: 0;
+	}
+	.section-hero.hero-vanilla .vanilla-copy h2,
+	.section-hero.hero-vanilla .vanilla-copy h4{
+		transform: translate3d(0,0,0) !important;
+		line-height: 0.9;
+	}
+	.section-hero.hero-rice .bottle-wrapper{
+		left: auto;
+	}
+	.section-hero.hero-vanilla .vanilla-copy h4{
+		top: 0;
+	    text-align: center;
+	}
+	.main-content .product-desc{
+		margin-top: 50px;
+	}
+	.section-hero.hero-vanilla .vanilla-copy{
+		position: relative;
+		left: auto;
+		right: auto;
+		top: 70px;
+		line-height: 1;
+		color: white;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.main-content.content-vanilla .bottle-wrapper{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main-content.content-vanilla .img-vanilla{
+		display: none;
+	}
+	.main-content .copy-desc p{
+		max-width: 100%;
 	}
 	.section-hero .bottle-wrapper{
-	    bottom: -30px;
+		// bottom: -30px;
+		bottom: -50%;
+		width: 55%;
+		img{
+			width: 100%;
+		}
 	}
 	.main-content.content-jasmine .img-jas{
 		display: none;
@@ -211,7 +259,6 @@
 	}
 	.section-hero .bottle-wrapper .img-bot{
 		transform: scale(1) !important;
-		max-width: 100px;
 		margin-left: 0;
 		top: -80px;
 	}
@@ -219,9 +266,6 @@
 	.section-hero.hero-vanilla .img-vanilla,
 	.main-content.content-vanilla .img-pandan{
 		display: none;
-	}
-	.section-hero.hero-vanilla .vanilla-copy h4{
-		top: -50px;
 	}
 	.section-hero.hero-vanilla .vanilla-copy .cp-pandan{
 		margin-left: 0;
@@ -241,9 +285,6 @@
 		.bg-par{
 			transform: scale(1) translate3d(0,0,0) !important;
 		}
-	}
-	.section-hero .bottle-wrapper .img-bot{
-		top: -30px;
 	}
 	.section-hero.hero-rice .img-rice {
 		margin-right: 0;

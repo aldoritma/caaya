@@ -3,7 +3,7 @@ $bar-height: 2px;
 $bar-spacing: 8px;
 
 .header{
-    position: fixed;
+    position: relative;
     width: 100%;
 	z-index: 1000;
 }
@@ -23,7 +23,7 @@ $bar-spacing: 8px;
 	display: none;
 }
 .hamburger-menu {
-    position: absolute;
+    position: fixed;
     top: 40px;
     left: 40px;
     margin: auto;

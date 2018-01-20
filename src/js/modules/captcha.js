@@ -30,10 +30,10 @@ if ($('.contact').length > 0) {
     function removeSpaces(string) {
         return string.split(' ').join('');
     }
-    $('#refresh').click(function name() {
+    $('#refresh').click(function() {
         Captcha();
     })
-    $('#submit-btn').click(function name() {
+    $('#submit-btn').click(function() {
         ValidCaptcha();
     })
     Captcha();

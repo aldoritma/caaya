@@ -69,15 +69,15 @@ if ($('#home').length > 0) {
             x: 0,
             opacity: 1
         }, 0.1),
-        TweenMax.to('#copy-desc-p-3 span', 0.1, {
+        TweenMax.to('#copy-desc-p-3 span', 0.5, {
             width: "42px",
-            delay: 0.2,
+            delay: 0.5,
             opacity: 1
         }),
-        TweenMax.staggerTo('#copy-desc-p-3 p', 0.3, {
+        TweenMax.staggerTo('#copy-desc-p-3 p', 0.5, {
             x: 0,
             opacity: 1,
-            delay: 0.3,
+            delay: 1,
         }, 0.1),
     ])
 
@@ -90,60 +90,35 @@ if ($('#home').length > 0) {
         })
         )
         .addTo(controllerEnter);
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
-        .setTween(
-            TweenMax.to('#bg-par1-p', 1, {
-                scale: 1.05
-            })
-        )
-        .addTo(controllerEnter);
+    // new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
+    //     .setTween(
+    //         TweenMax.to('#bg-par1-p', 1, {
+    //             y: "+=10px"
+    //         })
+    //     )
+    //     .addTo(controllerEnter);
 
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
-        .setTween(
-        TweenMax.to('#daun-p', 1, {
-            y: "-=50px"
-        })
-        )
-        .addTo(controllerEnter);
+    // new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
+    //     .setTween(
+    //     TweenMax.to('#teko-p', 1, {
+    //         y: "+=50px"
+    //     })
+    //     )
+    //     .addTo(controllerEnter);
 
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
-        .setTween(
-        TweenMax.to('#teko-p', 1, {
-            y: "+=50px"
-        })
-        )
-        .addTo(controllerEnter);
-
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
+    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 260 })
         .setTween(
             TweenMax.to('#copy-1', 0.5, {
-                y: "-=50px"
+                y: "+=100px"
             })
         )
         .addTo(controllerEnter);
 
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
+    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 260 })
         .setTween(
         TweenMax.to('#copy-2', 0.5, {
-            y: "+=10px",
+            y: "+=60px",
         })
-        )
-        .addTo(controllerEnter);
-
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
-        .setTween(
-            TweenMax.to('#copy-2', 0.5, {
-                y: "+=10px",
-            })
-        )
-        .addTo(controllerEnter);
-
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 200 })
-        .setTween(
-            TweenMax.to('#img-jas-p', 1, {
-                y: "+=20px",
-                scale: 1.1
-            })
         )
         .addTo(controllerEnter);
 
@@ -151,22 +126,22 @@ if ($('#home').length > 0) {
         .setTween(
         TweenMax.to('#img-bot-green-p', 1, {
             y: "-=50px",
-            scale: 1.2
+            scale: 1.1
         })
         )
         .addTo(controllerEnter);
 
-    new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 600 })
-        .setTween(
-            TweenMax.to('#img-jas-p', 0.6, {
-                y: "-=50px",
-            })
-        )
-        .addTo(controllerEnter);
+    // new ScrollMagic.Scene({ triggerElement: ".hero-jasmine", duration: "100%", offset: 600 })
+    //     .setTween(
+    //         TweenMax.to('#img-jas-p', 0.6, {
+    //             y: "-=50px",
+    //         })
+    //     )
+    //     .addTo(controllerEnter);
     new ScrollMagic.Scene({ triggerElement: ".content-jasmine", duration: "100%", offset: 200 })
         .setTween(
             TweenMax.to('#img-jas-p2', 0.6, {
-                y: "-=20px",
+                y: "+=20px",
             })
         )
         .addTo(controllerEnter);
@@ -194,7 +169,8 @@ if ($('#home').length > 0) {
     new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "100%", offset: 300 })
         .setTween(
             TweenMax.to('.vanilla-copy h4', 0.6, {
-                y: "+=30px",
+                y: "-=20px",
+                x: "-=20px",
             })
         )
         .addTo(controllerEnter);
@@ -207,10 +183,10 @@ if ($('#home').length > 0) {
         )
         .addTo(controllerEnter);
 
-    new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "100%", offset: 200 })
+    new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "60%", offset: 200 })
         .setTween(
         TweenMax.to('.vanilla-copy .cp-pandan', 0.6, {
-            x: "+=50px",
+            x: "-=40px",
         })
         )
         .addTo(controllerEnter);
@@ -219,33 +195,18 @@ if ($('#home').length > 0) {
         .setTween(
         TweenMax.to('#img-bot-blue-p', 1, {
             y: "-=50px",
-            scale: 1.06
+            scale: 1.1
         })
         )
         .addTo(controllerEnter);
 
-    new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "100%", offset: 200 })
-        .setTween(
-        TweenMax.to('#img-van-p', 0.6, {
-            y: "-=100px",
-        })
-        )
-        .addTo(controllerEnter);
-
-    new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "100%", offset: 200 })
-        .setTween(
-        TweenMax.to('#img-pan-p', 0.6, {
-            y: "-=25px",
-        })
-        )
-        .addTo(controllerEnter);
-    new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "100%", offset: 100 })
-        .setTween(
-        TweenMax.to('#bg-par2-p', 1, {
-            y: "+=40px"
-        })
-        )
-        .addTo(controllerEnter);
+    // new ScrollMagic.Scene({ triggerElement: ".hero-vanilla", duration: "100%", offset: 100 })
+    //     .setTween(
+    //     TweenMax.to('#bg-par2-p', 1, {
+    //         y: "+=10px"
+    //     })
+    //     )
+    //     .addTo(controllerEnter);
 
     new ScrollMagic.Scene({ triggerElement: ".content-vanilla", duration: "100%", offset: 100 })
         .setTween(stag2)
@@ -303,7 +264,8 @@ if ($('#home').length > 0) {
     new ScrollMagic.Scene({ triggerElement: ".hero-rice", duration: "100%", offset: 200 })
         .setTween(
         TweenMax.to('#img-rice', 1, {
-            x: "-=50px",
+            y: "-=20px",
+            x: "-=20px",
             scale: 1.1
         })
         )
@@ -324,7 +286,7 @@ if ($('#home').length > 0) {
         })
         )
         .addTo(controllerEnter);
-    new ScrollMagic.Scene({ triggerElement: ".content-rice", duration: "100%", offset: 400 })
+    new ScrollMagic.Scene({ triggerElement: ".content-rice", duration: "100%", offset: 100 })
         .setTween(stag3)
         .addTo(controllerEnter);
 
@@ -340,8 +302,7 @@ if ($('#home').length > 0) {
     new ScrollMagic.Scene({ triggerElement: ".content-rice", duration: "100%", offset: 400 })
         .setTween(
         TweenMax.to('#img-bot-red-p', 1, {
-            y: "+=30px",
-            scale: 1.07
+            scale: 1.1
         })
         )
         .addTo(controllerEnter);

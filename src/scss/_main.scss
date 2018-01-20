@@ -1,9 +1,34 @@
+.btls{
+    width: 100%;
 
+}
 .hero-home{
     padding-top: 100px;
     .bottles{
         text-align: center;
         display: block;
+        width: 100%;
+        position: relative;
+        &:before{
+            background: url(img/shader.png) no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 230px;
+            background-position: center;
+            bottom: -60px;
+            left: 0;
+        }
+        span.caustic{
+            position: absolute;
+            background: url(img/caustic.png) no-repeat;
+            background-size: 100%;
+            width: 274px;
+            height: 120px;
+            bottom: -43px;
+            left: 50%;
+            margin-left: -132px;
+            opacity: 0;
+        }
         img{
             display: inline-block;
             max-width: 100px;
@@ -71,28 +96,13 @@
 }
 
 .section-hero{
-    min-height: 80vh;
+    min-height: 100vh;
     display: block;
-
-    .teko{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        img{
-            width: 100%;
-        }
-    }
-    .daun{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     .bottle-wrapper{
         position: absolute;
-        left: 60%;
+        left: 67%;
         z-index: 10;
-        bottom: 0;
+        bottom: -42%;
         img{
             display: inline-block;
             vertical-align: bottom;
@@ -131,15 +141,12 @@
     }
     &.hero-vanilla{
         .bottle-wrapper{
-            bottom: 0;
-            left: 66%;
-            margin-bottom: -80px;
+            margin-bottom: 0;
         }
         img{
             position: relative;
         }
         .img-bot{
-            margin-left: -260px;
             z-index: 10;
         }
         .img-pandan{
@@ -153,7 +160,7 @@
         .vanilla-copy{
             position: relative;
             left: 15%;
-            top: 100px;
+            top: 140px;
             line-height: 1;
             color: white;
             width: 50%;
@@ -188,9 +195,9 @@
         .rice-copy{
             position: relative;
             left: 19%;
-            top: 100px;
+            top: 200px;
+            color: rgba(255,255,255,0.9);
             line-height: 1;
-            color: white;
             width: 50%;
             h4{
                 @include font-size(70px);
@@ -214,7 +221,7 @@
 }
 .divide{
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     &:before{
         position: absolute;
         width: 110%;
@@ -230,21 +237,16 @@
 .main-content{
     padding: 100px 0;
     &.content-jasmine{
-        h5{
-            color: #d6d924;
-        }
         .img-jas{
             position: relative;
             top: 30px;
             left: 70px;
             max-width: 120px;
+            z-index: 1;
         }
     }
     &.content-vanilla{
         padding-bottom: 150px;
-        h5{
-            color: #80d9f7;
-        }
         .img-pandan{
             position: relative;
             max-width: 200px;
@@ -270,9 +272,6 @@
         }
     }
     &.content-rice{
-        h5{
-            color: #d6d924;
-        }
         .img-rice-big{
             position: relative;
             max-width: 500px;
@@ -288,13 +287,13 @@
         }
     }
     h3{
-        @include font-size(42px);
+        @include font-size(62px);
         display: block;
         margin: 0;
         line-height: 1;
     }
     h5{
-        @include font-size(28px);
+        @include font-size(24px);
         display: block;
         margin: 0;
         line-height: 1;
@@ -315,10 +314,11 @@
         }
     }
     .copy-desc{
-        margin-top: 100px;
-
+        margin-top: 60px;
+        position: relative;
         span{
-            display: inline-block;
+            position: absolute;
+            display: block;
             width: 0;
             opacity: 0;
             height: 2px;
@@ -328,11 +328,10 @@
             top: 10px;
         }
         p{
-            display: inline-block;
-            vertical-align: top;
             margin: 0;
-            margin-left: 46px;
+            margin-left: 60px;
             opacity: 0;
+            margin-bottom: 20px;
             @include transform(translateX(-50px));
         }
     }
@@ -346,6 +345,12 @@
             filter: invert(0);
         }
     }
+}
+main.about{
+     overflow: hidden;
+}
+.slider-wrapper{
+    display: none;
 }
 .about-hero{
     min-height: 90vh;
@@ -564,4 +569,10 @@
 #lbl-msg{
     top: 30px;
     bottom: auto;
+}
+
+.section-hero.hero-rice .rice-copy h2,
+.section-hero.hero-vanilla .vanilla-copy h2{
+    color: rgba(255,255,255,0.9);
+    // opacity: 0.9;
 }

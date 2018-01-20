@@ -52,6 +52,10 @@ if ($('#home').length > 0) {
             delay: 0.6,
             ease: Power2.easeOut
         }),
+        TweenMax.to('span.caustic', 1, {
+            opacity: 1,
+            delay: 1.7,
+        }),
         TweenMax.to('.leaf', 4, {
             scale: 1.1,
             rotation: 360,

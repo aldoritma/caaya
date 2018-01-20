@@ -36,6 +36,8 @@ h1{
 .button-green{
     cursor: pointer;
     padding: 10px 20px;
+    padding-top: 7px;
+    line-height: 1;
     width: 185px;
     display: block;
     color: #333333;
@@ -47,7 +49,12 @@ h1{
         color: #9ee325;
         display: inline-block;
         font-size: 20px;
-        margin-left: -10px;
+        &.icon-angle-right{
+            margin-right: -10px;
+        }
+        &.icon-angle-left{
+            margin-left: -10px;
+        }
     }
 }
 
