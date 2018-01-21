@@ -10,7 +10,9 @@ class Contact_m extends CI_Model {
 	{
 		$create = $this->db->insert('tbl_contactus', array(
 			'name' => $input['name'],
-			'fname' => $input['fname'],
+			'ponsel' => $input['ponsel'],
+			'category' => $input['category'],
+			'address' => $input['address'],
 			'email' => $input['email'],
 			'phone' => $input['phone'],
 			'message' => $input['message'],

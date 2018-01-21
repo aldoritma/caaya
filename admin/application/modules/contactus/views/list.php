@@ -44,10 +44,10 @@
                     <tr>
                     <th>No.</th>
                     <th>Name</th>
-                    <th>First Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Message</th>
+                    <th>Address</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -61,10 +61,7 @@
                       <td class="v-align-middle">
                         <p><?php echo $data['name'];?></p>
                           </td>
-                          <td class="v-align-middle">
-                            <p>
-                          <?php echo $data['fname'];?></p>
-                              </td>
+                          
                             <td class="v-align-middle">
                               <p><?php echo $data['email'];?></p>
                                 </td>
@@ -74,6 +71,10 @@
                       <td class="v-align-middle" width="30%">
                       <p><?php echo stripslashes(html_entity_decode($data['message'])); ?></p>
                       </td>
+                      <td class="v-align-middle">
+                            <p>
+                          <?php echo stripslashes(html_entity_decode($data['address'])); ?></p>
+                              </td>
                     </tr>
                   <?php $number++; endforeach; endif; ?>
 
