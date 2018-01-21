@@ -31,17 +31,26 @@
               <div class="slider-wrapper will-show">
                 <div class="slider-container">
                   <div class="slider-item">
-                    <p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
-                      sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+                    <p>
+                      Teh diperkenalkan pertama kali di Indonesia tahun 1684 oleh ahli botani Jerman, Andreas Cleyer yang bekerja untuk VOC.
+                    </p>
                   </div>
                   <div class="slider-item">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores illum
-                      facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+                    <p>
+Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol biasanya ditemani cemilan seperti singkong rebus or uli goreng.                    </p>
                   </div>
                   <div class="slider-item">
-                    <p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
-                      expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+                    <p>Mantan presiden Amerika Serikat, Obama, pada kunjungannya ke Bali tahun 2017 membawa teh beras merah khas Bali sebagai oleh-oleh.</p>
                   </div>
+                  <div class="slider-item">
+                    <p>Masyarakat Sunda di daerah Jawa Barat mengenal tradisi Nyaneut menggunakan teh Kejek khas Cigedug yang dinikmati bersama kudapan seperti ubi jalar, singkong, dan ganyong.</p>
+                  </div>
+                  <div class="slider-item">
+                    <p>
+                    Di Tanah Minang ada teh talua, minumah teh khas Sumatera Barat yaitu teh yang diseduh dengan telur ayam atau bebek mentah, gula dan susu kental manis.
+                    </p>
+                  </div>
+
                 </div>
                 <div class="slider-nav">
                   <span class="arrow arrow-prev"><i class="demo-icon icon-angle-left"></i></span>
@@ -74,16 +83,27 @@
               <div class="slider-wrapper will-show">
                 <div class="slider-container">
                   <div class="slider-item">
-                    <p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
-                      sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
+                    <p>
+                      Nama asing melati adalah jasmine yang berasal dari kosakata Arab dan Persia Kuno, “Yâsmin” atau “Yasaman” bermakna “bunga nan harum”.
+                    </p>
                   </div>
                   <div class="slider-item">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores
-                      illum facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
+                    <p>
+                        Melati termasuk dalam keluarga zaitun dan ada sekitar 200 jenis melati yang hidup di daerah iklim tropis dan hangat di Eurasia, Australasia dan Oceania.                    </p>
                   </div>
                   <div class="slider-item">
-                    <p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
-                      expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
+                    <p>
+                        Melati dapat bertahan selama 15 - 20 tahun di alam bebas dan semak Melati bisa tumbuh mencapai ketinggian 3 sampai 4,5 meter.
+                    </p>
+                  </div>
+                  <div class="slider-item">
+                    <p>
+                        Melati ditetapkan sebagai salah satu bunga nasional di Indonesia dalam undang-undang tahun 1990.
+                    </p>
+                  </div>
+                  <div class="slider-item">
+                    <p>
+                        Melati di Tapal Batas adalah lagu yang diciptakan oleh Ismail Marzuki dimana lagu ini menggambarkan melati sebagai pahlawan yang telah gugur di medan perang.                    </p>
                   </div>
                 </div>
                 <div class="slider-nav">
@@ -120,20 +140,13 @@
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
               </div>
+
               <div class="slider-wrapper will-show">
                 <div class="slider-container">
-                  <div class="slider-item">
-                    <p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
-                      sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
-                  </div>
-                  <div class="slider-item">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores
-                      illum facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
-                  </div>
-                  <div class="slider-item">
-                    <p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
-                      expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
-                  </div>
+                  <div class="slider-item"><p> Pandanus amaryllifolius adalah tanaman tropis termasuk genus Pandanus. Biasa dikenal sebagai daun pandan dan banyak digunakan pada bahan masakan untuk menambahkan aroma di wilayah Asia Tenggara.</p></div>
+                  <div class="slider-item"><p> Daun pandan juga digunakan sebagai pewarna makanan alami. Jenis yang digunakan adalah daun pandan suji karena memiliki warna hijau yang pekat, tetapi pandan suji tidak memiliki aroma sekuat pandan wangi.</p></div>
+                  <div class="slider-item"><p> Pandan juga sering disebut sebagai vanila dari Asia Tenggara karena daunnya yang wangi dan aromatik. Istilah pandan negara lain: rampe (Srilanka), bai toey (Thailand), La Dua (Vietnam).</p></div>
+                  <div class="slider-item"><p> Daun pandan banyak digunakan dalam masakan yang manis dan gurih dari masakan dengan nasi hingga makanan penutup. Daun pandan biasanya dimasak dengan kelapa, seperti nasi lemak dan sangat cocok dipadukan dengan nasi ketan, sereh, susu, gula merah dan kunyit.</p></div>
                 </div>
                 <div class="slider-nav">
                   <span class="arrow arrow-prev">
@@ -171,17 +184,15 @@
               <div class="slider-wrapper will-show">
                 <div class="slider-container">
                   <div class="slider-item">
-                    <p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
-                      sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
-                  </div>
+                   <p>Vanila merupakan tanaman tergolong jenis anggrek dari suku Orchidaceae yang memiliki lebih dari 1500 spesies. Vanila Bourbon dan Tahiti adalah dua jenis vanila yang digunakan secara komersil.</p></div>
                   <div class="slider-item">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores
-                      illum facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
-                  </div>
+                   <p>Vanila di Indonesia banyak digemari konsumen di dalam maupun luar negeri karena kualitas yang lebih unggul dibandingkan vanila Mexico, Amerika Serikat, dan Madagaskar. </p></div>
                   <div class="slider-item">
-                    <p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
-                      expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
-                  </div>
+                   <p>Vanila bukan tanaman asli Indonesia tetapi tumbuh lebih subur dan produktif di Indonesia dibandingkan negara asalnya, Mexico.</p></div>
+                  <div class="slider-item">
+                   <p>Bunga vanila hanya terbuka selama 24 jam dimana jika tidak terjadi penyerbukan, bunga akan layu dan mati. Jika penyerbukan berhasil, bunga akan berkembang menjadi seperti polong dengan panjang 6-10 inci dengan ribuan biji hitam sangat kecil di dalamnya. </p></div>
+                  <div class="slider-item">
+                   <p>Vanila sangat mahal harganya karena merupakan agrikultur dengan labor paling intensif di dunia. Vanila merupakan rempah termahal kedua setelah safron. Diperlukan waktu hingga tiga tahun setelah vanila ditanam hingga bunga pertama tumbuh. </p></div>
                 </div>
                 <div class="slider-nav">
                   <span class="arrow arrow-prev">
@@ -219,18 +230,12 @@
               </div>
               <div class="slider-wrapper will-show">
                 <div class="slider-container">
-                  <div class="slider-item">
-                    <p>Teh Poci Tegal awalnya akan terasa sepat/pahit namun perlahan rasa manis akan muncul setelah gula larut. Hal ini diterjemahkan
-                      sebagai filosofi kehidupan yang pahit pada awal namun dengan usaha maka akan kita terima manisnya.</p>
-                  </div>
-                  <div class="slider-item">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quidem doloribus iusto soluta. Ducimus dolores
-                      illum facilis dignissimos natus quidem at. Quia veniam similique consequatur, accusamus beatae optio vero.</p>
-                  </div>
-                  <div class="slider-item">
-                    <p>aspernatur pariatur numquam dolores sequi neque distinctio at deleniti, dolorem possimus totam amet. Suscipit incidunt
-                      expedita fugit architecto sit quas hic consectetur quibusdam veniam ipsam? Excepturi animi sequi.</p>
-                  </div>
+                  <div class="slider-item"><p>Beras adalah produksi tertinggi kedua di dunia setelah jagung dan merupakan bahan makanan utama bagi separuh orang di dunia.</p></div>
+                  <div class="slider-item"><p>Beras ada yang berwarna putih, kuning, keemasan, coklat, ungu, merah atau hitam. Varietas padi terbagi tiga kategori utama berdasarkan ukuran butiran: panjang, sedang dan pendek. Padi berukuran sedang dan pendek biasanya lengket karena kandungan pati yang tinggi.</p></div>
+                  <div class="slider-item"><p>Beberapa jenis beras: Basmati (butiran panjang dengan profil rasa yang unik),  Long Grain White (beras putih biasa), Abrorio (beras putih pendek lengket ketika dimasak), Jasmine (beras panjang beraroma alami), Whole Grain Brown (beras coklat dengan bagian gandum yang utuh), Black Sticky: beras hitam yang lengket ketika dimasak</p></div>
+                  <div class="slider-item"><p>Beras dibudidayakan di lebih dari 100 negara dan di setiap benua kecuali Antartika. Ada lebih dari 40.000 varietas beras di dunia dan sekitar 4000 di antaranya dibudidayakan secara komersil.</p></div>
+                  <div class="slider-item"><p>Produksi beras pada tahun 2016 mencapai 472,04 juta ton. Tiga produsen terbesar adalah Cina (145 juta ton), India (106 juta ton) dan Indonesia (41 juta ton). </p></div>
+
                 </div>
                 <div class="slider-nav">
                   <span class="arrow arrow-prev">
