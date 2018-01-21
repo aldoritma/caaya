@@ -116,7 +116,7 @@
                   Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
                   yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
                   apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
-                <button class="button-green hide-parent">Melati Fact
+                <button class="button-green hide-parent">Daun Pandan Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
               </div>
@@ -164,7 +164,7 @@
                   Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
                   yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
                   apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
-                <button class="button-green hide-parent">Melati Fact
+                <button class="button-green hide-parent">Vanilla Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
               </div>
@@ -202,7 +202,7 @@
       <div class="about-detail" id="about-slider5">
         <div class="container about-detail-wrapper">
           <figure class="detail-img aligner">
-            <img src="<?php echo base_url('assets/img/about-slide1.png');?>" alt="">
+            <img src="<?php echo base_url('assets/img/about-slide5.png');?>" alt="">
           </figure>
           <div class="about-desc">
             <div class="wrap-desc">
@@ -213,7 +213,7 @@
                   Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
                   yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
                   apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
-                <button class="button-green hide-parent">Melati Fact
+                <button class="button-green hide-parent">Beras Sangrai Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
               </div>
