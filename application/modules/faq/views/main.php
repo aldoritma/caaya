@@ -23,34 +23,26 @@
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
-                                        <h2>Apa makna dari Caaya?</h2>
-                                        <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free
-                                            to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll
-                                            use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+                                        <h2>Apakah Caaya?</h2>
+                                        <p>Caaya adalah rangkaian teh Indonesia yang terinspirasi dari kekayaan budaya & kekayaan alam nusantara</p>
                                     </li>
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <h2>Apa saja varian rasa Caaya?</h2>
-                                        <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state
-                                            of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element.
-                                            Media queries are used to make the element responsive to different screen sizes.</p>
+                                        <p>Saat ini Caaya hadir dalam tiga varian: Revive Me Jasmine, Soothe Me Vanilla Pandan, dan Power Me Toasted Rice. </p>
                                     </li>
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
-                                        <h2>Dari manakah produk Caaya berasal?</h2>
-                                        <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers
-                                            that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with
-                                            Javascript (if needed) by changing the "checked" property of the input element.</p>
+                                        <h2>Adakah manfaat yang dimiliki Caaya?</h2>
+                                        <p>Teh dalam kemasan sudah menjadi bagian dari kehidupan sehari-hari masyarakat Indonesia. Saat ini masyarakat Indonesia menikmati teh dalam kemasan lebih untuk memperoleh kesegaran, terutama karena iklim Indonesia yang cenderung panas dan lembab.</p>
                                     </li>
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
                                         <h2>Apa yang membedakan Caaya dengan teh kemasan lainnya?</h2>
-                                        <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that
-                                            don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript
-                                            (if needed) by changing the "checked" property of the input element.</p>
+                                        <p>Karena terinspirasi dari kekayaan alam dan budaya, sensasi rasa Caaya langsung terasa familiar bagi lidah Indonesia. Prinsip kami dalam pengembangan Caaya adalah segalanya dalam takaran yang tepat, tidak kurang dan tidak lebih.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -61,23 +53,38 @@
                                 <li>
                                     <input type="checkbox" checked>
                                     <i></i>
-                                    <h2>Bagaimana Kualitas dari Caaya?</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex veniam ab laboriosam, placeat magnam aliquam voluptas dolorem ipsam obcaecati inventore porro non, veritatis animi itaque asperiores repellat doloribus temporibus quibusdam vitae soluta, esse laudantium! Natus unde numquam fugiat ipsam.</p>
+                                    <h2>Adakah anjuran khusus saat menikmati Caaya?</h2>
+                                    <p>Caaya lebih menyegarkan jika disajikan setelah disimpan di dalam pendingin. Segera habiskan ketika botol sudah dibuka karena Caaya tidak mengandung bahan pengawet.</p>
                                 </li>
                                 <li>
                                     <input type="checkbox" checked>
                                     <i></i>
-                                    <h2>Bagaimana Keamanan dari Caaya?</h2>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa magnam ex a omnis, perspiciatis rerum tempore at consequuntur dolores adipisci quaerat voluptatem labore neque dignissimos deserunt et? Expedita, debitis quod.</p>
+                                    <h2>Jika saya menemukan perbedaan warna teh kemasan Caaya antara satu dan yang lainnya, apakah tetap layak dikonsumsi?</h2>
+                                    <p>
+                                      Caaya tidak menggunakan pewarna tambahan, sehingga warna produknya berasal dari hasil seduhan daun teh.
+                                      Perubahan warna pada teh kemasan menjadi lebih gelap seiring berjalannya waktu adalah hal yang umum terjadi karena itu adalah sifat alami teh yang disimpan dalam jangka waktu tertentu. Selama produk Caaya masih belum mencapai tanggal kadaluarsa dan dalam kemasan yang masih tertutup rapat, produk tersebut masih aman dikonsumsi.
+                                      Namun, jika Anda menemukan warna teh yang keruh, kami menghimbau untuk menghubungi AQUA menyapa agar bisa kami investigasi lebih lanjut
+                                    </p>
                                 </li>
                                 <li>
                                     <input type="checkbox" checked>
                                     <i></i>
-                                    <h2>Bagaimana Rasa Produk Caaya ?</h2>
-                                    <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers
-                                        that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated
-                                        with Javascript (if needed) by changing the "checked" property of the input element.</p>
+                                    <h2>Apakah produk Caaya telah mendapatkan sertifikasi halal?</h2>
+                                    <p>Caaya adalah minuman teh dalam kemasan yang telah tersertifikasi halal oleh LPPOM MUI dengan nomor 00120016900801.</p>
                                 </li>
+                                <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <h2>Apakah Caaya menggunakan pemanis buatan?</h2>
+                                    <p>Produk Caaya tidak menggunakan pemanis buatan. Selain menggunakan gula, Caaya juga menggunakan Stevia, yang merupakan pemanis alami yang telah digunakan selama ratusan tahun.</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <h2>Apakah Caaya menggunakan bahan pengawet?</h2>
+                                    <p>Caaya tidak menggunakan bahan pengawet. Kami menggunakan teknologi aseptik yang memungkinkan formulasi tanpa pengawet. Kami menjamin kualitas Caaya selama kemasan tetap dalam kondisi tertutup rapat, dan dikonsumsi sebelum tanggal kedaluwarsa.</p>
+                                </li>
+
                             </ul>
                         </div></div>
                         <div class="tab-content" id="tab3">
