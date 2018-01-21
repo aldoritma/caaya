@@ -11,7 +11,7 @@
             <span class="caustic"></span>
             <img class="b-red" src="<?php echo base_url('assets/img/bottle-red.png');?>" alt="">
             <img class="b-green" src="<?php echo base_url('assets/img/bottle-green.png');?>" alt="">
-            <img class="b-blue" src="<?php echo base_url('assets/img/bottle-blue.png');?>" alt="">
+            <img class="b-blue" src="<?php echo base_url('assets/img/bottle-blue.png')?>" alt="">
           </div>
           <h1>Rasa Teh yang Sebenarnya</h1>
           <ul class="list--none list-par">
@@ -29,7 +29,7 @@
             <h2 id="copy-2">Jasmine</h2>
           </div>
           <div class="bottle-wrapper">
-            <img class="img-bot" id="img-bot-green-p"src="img/bot1.png" alt="">
+            <img class="img-bot" id="img-bot-green-p" src="<?php echo base_url('assets/img/bot1.png');?>" alt="">
           </div>
         </div>
         <div class="main-content content-jasmine">
@@ -96,7 +96,6 @@
             <h2 id="cp-rice-3" class="cp-rice">rice</h2>
           </div>
           <div class="bottle-wrapper">
-            <img class="img-rice" id="img-rice" src="<?php echo base_url('assets/img/rice.png');?>" alt="">
             <img class="img-bot" id="img-rice-bot" src="<?php echo base_url('assets/img/bot3.png');?>" alt="">
           </div>
         </div>

@@ -13,7 +13,8 @@
     <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-2.2.3.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.form-3.45.0.js');?>"></script>
     </head>
-    <body <?php if($this->uri->segment(1) == 'about') { echo "id='about'"; } ?>>
+    <body <?php if($this->uri->segment(1) == 'about') { echo "id='about'"; }elseif($this->uri->segment(1) == '')  { echo "class='hidden-until-ready'";
+    } ?>>
     <noscript>Your browser does not support JavaScript!</noscript>
 	<?php echo $template['partials']['header']; ?>
 	<?php echo $template['body']; ?>
