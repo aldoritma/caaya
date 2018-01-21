@@ -144,10 +144,8 @@ select::-ms-expand {
 .select::after {
   content: '\25BC';
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
-  bottom: 0;
-  padding: 0 1em;
   pointer-events: none;
 }
 /* Transition */
