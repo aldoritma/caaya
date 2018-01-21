@@ -1,6 +1,19 @@
 .btls{
     width: 100%;
-
+}
+.hidden-until-ready{
+    visibility: hidden;
+    header{
+        visibility: hidden;
+    }
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
 }
 .hero-home{
     padding-top: 100px;
@@ -17,6 +30,14 @@
             background-position: center;
             bottom: -60px;
             left: 0;
+            opacity: 0;
+            @include transition(0.6s);
+        }
+        &.is-active{
+            &:before{
+                opacity: 1;
+                @include transition(0.6s);
+            }
         }
         span.caustic{
             position: absolute;

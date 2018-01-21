@@ -8,6 +8,7 @@ require('./js/modules/tabs.js');
 
 
 $(document).ready(function () {
+    console.log('ready');
     $(".input-text").each(function () {
         if ($(this).val() != "") {
             $(this).parent().addClass("animation");
@@ -27,12 +28,14 @@ $(document).ready(function () {
         $('.bar').toggleClass('animate');
         $('.main-navigation').toggleClass('is-active');
         $('.overlay').toggle()
-
     })
+
 
 });
 
 $(window).on("load", function () {
+    console.log('loaded');
+    $('body').removeClass('hidden-until-ready');
     if ($(window).width() > 768) {
         let contactH = $(".contact-form").height();
         $(".contact-information").height(contactH)

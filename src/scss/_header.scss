@@ -30,10 +30,10 @@ $bar-spacing: 8px;
     width: $bar-width;
     height: $bar-height + $bar-spacing*2;
 	cursor: pointer;
-		@include transition(.5s ease-in);
+		// @include transition(.5s ease-in);
 	&.open{
 		left: calc(65% + 40px);
-		@include transition(.5s ease-in);
+		// @include transition(.5s ease-in);
 	}
 }
 
