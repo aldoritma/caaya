@@ -92,7 +92,7 @@
           </div>
           <div class="rice-copy">
             <h4 id="cp-rice-1">power me</h4>
-            <h2 id="cp-rice-2">toasted</h2>
+            <h2 id="cp-rice-2">roasted</h2>
             <h2 id="cp-rice-3" class="cp-rice">rice</h2>
           </div>
           <div class="bottle-wrapper">

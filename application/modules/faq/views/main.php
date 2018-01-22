@@ -13,7 +13,7 @@
                         <nav class="tabs-navigation">
                             <a class="nav-tab" href="#tab1">Keterangan Umum</a>
                             <a class="nav-tab" href="#tab2">Kualitas, Keamanan<br>& Rasa Produk</a>
-                            <a class="nav-tab" href="#tab3">Kemasan</a>
+                            <!-- <a class="nav-tab" href="#tab3">Kemasan</a> -->
                         </nav>
                     </div>
                     <div class="col-9">
@@ -87,10 +87,10 @@
 
                             </ul>
                         </div></div>
-                        <div class="tab-content" id="tab3">
+                        <!-- <div class="tab-content" id="tab3">
                             <p>Kemasan Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro obcaecati id molestias doloribus praesentium expedita voluptatibus harum tempore nesciunt!</p>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis natus, accusantium error exercitationem placeat doloremque est, repudiandae inventore deleniti temporibus quibusdam laboriosam veniam. Laboriosam necessitatibus maxime vel distinctio earum autem, odio pariatur facilis labore quidem assumenda, suscipit perferendis sit repudiandae nihil, officia tempora nesciunt. Odio inventore obcaecati autem culpa earum!</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

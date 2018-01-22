@@ -246,3 +246,12 @@ select::-ms-expand {
         display: block;
     }
 }
+
+.validation-form{
+	margin-top: -12px; color: red;
+	position: absolute;
+	font-size: 6px;
+}
+.alert-success{
+font-size: 18px; color: green;
+}
