@@ -32,7 +32,7 @@ $bar-spacing: 8px;
 	cursor: pointer;
 		// @include transition(.5s ease-in);
 	&.open{
-		left: calc(65% + 40px);
+		left: calc(35% + 40px);
 		// @include transition(.5s ease-in);
 	}
 }
@@ -90,7 +90,7 @@ $bar-spacing: 8px;
 .main-navigation{
 	padding: 50px;
 	background: white;
-	width: 65%;
+	width: 35%;
 	height: 100vh;
 	// @include transform(translateX(-100%));
 	left: -100%;
@@ -107,7 +107,7 @@ $bar-spacing: 8px;
 		padding: 20px 0;
 		display: block;
 		text-align: center;
-		@include font-size(32px);
+		@include font-size(26px);
 		@include transition(.2s ease-in);
 		cursor: pointer;
 		&:hover{

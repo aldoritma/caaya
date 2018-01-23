@@ -136,6 +136,7 @@ select {
   margin: 0;
   padding: 0 0 0 .5em;
   cursor: pointer;
+  @include font-size(14px);
 }
 select::-ms-expand {
   display: none;
@@ -179,9 +180,13 @@ select::-ms-expand {
     }
     #mainCaptcha{
         font-family: 'Raleway Dots', cursive;
-        @include font-size(40px);
+        @include font-size(34px);
         margin-top: -10px;
         max-width: 100%;
+        text-align: center;
+        @include max-screen(768px) {
+          text-align: left;
+        }
     }
     #refresh{
         color: #06b0ff;
@@ -245,4 +250,13 @@ select::-ms-expand {
      &.is-active{
         display: block;
     }
+}
+
+.validation-form{
+	margin-top: -12px; color: red;
+	position: absolute;
+	font-size: 6px;
+}
+.alert-success{
+font-size: 18px; color: green;
 }
