@@ -20,10 +20,7 @@
             <div class="wrap-desc">
               <h3><span class="align--left">Paduan</span> Teh Caaya</h3>
               <div class="will-hide">
-                <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini, Paduan
-                Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya, yang lain
-                karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai apa yang
-                menurut kami adalah permujudan terbaik teh Indonesia</p>
+                <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini, Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya, yang lain karena rasanya, dan yang terakhir untuk aromanya. Melalui kekuatan kumulatif berbagai elemen inilah kami berhasil mencapai apa yang menurut kami adalah perwujudan terbaik teh Indonesia. </p>
                 <button class="button-green hide-parent">Tea Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
@@ -72,10 +69,8 @@ Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol b
             <div class="wrap-desc">
               <h3>Melati</h3>
               <div class="will-hide">
-                <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini,
-                  Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
-                  yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
-                  apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
+                <p>Bagi masyarakat Indonesia, bunga melati adalah symbol kesucian, keanggunan dalam kesederhanaan, ketulusan, dan keindahan dalam kerendahan hati. Melati adalah bukti mahakarya alam: sesuatu yang kecil ukurannya, namun mampu menghasilkan aroma yang harum semerbak. Bunga ini selalu hadir dalam acara-acara penting kehidupan: mulai dari siraman, upacara pernikahan, hingga bunga untuk mengenang mereka yang telah meninggalkan kita. Mengingat pentingnya melati, tidak heran bahwa melati ditetapkan sebagai salah satu dari tiga puspa bangsa. Mencium wangi melati adalah melangkah kembali ke dalam hangatnya ibu pertiwi
+</p>
                 <button class="button-green hide-parent">Melati Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
@@ -132,10 +127,8 @@ Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol b
               <h3 style="margin-left: -200px;">Daun</h3>
               <h3 style="margin-right: -120px;">Pandan</h3>
               <div class="will-hide">
-                <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini,
-                  Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
-                  yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
-                  apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
+                <p>Tanaman pandan mudah dijumpai di pekarangan rumah di seluruh penjuru Indonesia. Walaupun asal-usulnya kurang diketahui, namun banyak yang percaya bahwa Pandan merupakan tanaman asli Indonesia. Pandan adalah sahabat ibu rumah tangga, karena banyak digunakan dalam aneka makanan dan minuman, baik yang bercitarasa asin maupun manis. Pada masa penjajahan, orang Belanda menyebut Pandan ‘vanilla dari timur’ karena rasa dan aromanya mengingatkan mereka akan vanilla. Pandan itu tak lekang oleh waktu – hingga kini Pandan masih menjadi bahan paling penting dalam aneka kudapan tradisional favorit.
+</p>
                 <button class="button-green hide-parent">Daun Pandan Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
@@ -173,10 +166,8 @@ Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol b
             <div class="wrap-desc">
               <h3>Vanilla</h3>
               <div class="will-hide">
-                <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini,
-                  Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
-                  yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
-                  apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
+                <p>Tidak banyak yang tahu bahwa Indonesia adalah salah satu negara pengekspor utama vanilla di dunia. Bentuknya yang seperti kacang panjang kurus berwarna hitam membuat tidak ada yang menyangka betapa mahalnya vanilla. Tidak heran harganya mahal mengingat proses pembudidayaannya yang padat karya. Anggrek vanilla harus dibuahi secara manual dengan tangan dalam waktu kurang dari 12 jam setelah mekar. Di Indonesia, vanilla dibudidayakan di beberapa bagian pulau Jawa, Sumatera Selatan dan NTT. Kebiasaan minum teh vanilla datang dari Sumatra, kemungkinan karena efektif dalam membasuh makanan khas Sumatra yang kaya rempah.
+</p>
                 <button class="button-green hide-parent">Vanilla Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
@@ -220,10 +211,8 @@ Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol b
               <h3 style="margin-left: -150px;">Beras</h3>
               <h3 style="margin-right: -50px;">Sangrai</h3>
               <div class="will-hide">
-                <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini,
-                  Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya,
-                  yang lain karena rasanya, dan yang terakhir aromanya. Melalui kekuatan kumuatif berbagai elemen inilah kami berhasil mencapai
-                  apa yang menurut kami adalah permujudan terbaik teh Indonesia</p>
+                <p>Beras adalah makanan pokok Indonesia, sehingga tidak heran bahwa beras memegang posisi penting di hati masyarakat. Saat panen beras adalah saat yang penuh perayaan – pertanda akan masa depan yang penuh kemakmuran. Di kaki gunung Batukaru di Bali, terdapatlah desa Jatiluwih, di mana perbukitan dihiasi dengan undak-undakan teras beras. Setelah dipanen, beras disimpan di dalam lumbung selama enam bulan hingga ‘matang’. Dua sendok teh beras matang dituangi air panas akan menghasilkan cairan beraroma sangria yang kental, warnanya yang kemerahan akan berangsur-angsur menjadi tambah gelap.
+</p>
                 <button class="button-green hide-parent">Beras Sangrai Fact
                   <i class="demo-icon icon-angle-right"></i>
                 </button>

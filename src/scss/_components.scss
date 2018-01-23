@@ -184,6 +184,9 @@ select::-ms-expand {
         margin-top: -10px;
         max-width: 100%;
         text-align: center;
+        @include max-screen(768px) {
+          text-align: left;
+        }
     }
     #refresh{
         color: #06b0ff;

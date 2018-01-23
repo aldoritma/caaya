@@ -15,7 +15,7 @@
             <?php endif; ?>
                 </div>
                 <?php echo form_open_multipart(base_url('contact/savecontact'), 'class="form_create"'); ?>
-                 
+
                     <div class="clearfix wrap">
                         <div class="input-container col-6">
                             <input type="text" id="input-name" class="input-text" name="name">
@@ -76,7 +76,7 @@
                                 <input type="button" id="refresh" value="Click to change" />
                                 <button type="submit" id="submit-btn" class="button-submit">Kirim</button>
                             </div>
-                            <div class="captcha-output input-container col-3">
+                            <div class="captcha-output input-container col-4">
                                 <input type="text" id="captchaInput" class="input-text inline-block" name="validationcaptcha">
                                 <label for="captchaInput" unselectable="on">Masukkan Captcha</label>
                                 <div class="notif-captcha formcontent" style="display:none;">
