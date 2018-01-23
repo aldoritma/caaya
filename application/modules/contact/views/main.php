@@ -76,7 +76,7 @@
                                 <input type="button" id="refresh" value="Click to change" />
                                 <button type="submit" id="submit-btn" class="button-submit">Kirim</button>
                             </div>
-                            <div class="captcha-output input-container col-3">
+                            <div class="captcha-output input-container col-4">
                                 <input type="text" id="captchaInput" class="input-text inline-block" name="validationcaptcha">
                                 <label for="captchaInput" unselectable="on">Masukkan Captcha</label>
                                 <div class="notif-captcha formcontent" style="display:none;">
