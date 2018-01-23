@@ -10,9 +10,8 @@ if ($('.contact').length > 0) {
             var d = alpha[Math.floor(Math.random() * alpha.length)];
             var e = alpha[Math.floor(Math.random() * alpha.length)];
             var f = alpha[Math.floor(Math.random() * alpha.length)];
-            var g = alpha[Math.floor(Math.random() * alpha.length)];
         }
-        var code = a + b + c + d + e + f + g;
+        var code = a + b + c + d + e + f;
         document.getElementById("mainCaptcha").value = code
     }
     function ValidCaptcha() {
