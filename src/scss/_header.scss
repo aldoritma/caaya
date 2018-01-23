@@ -107,7 +107,7 @@ $bar-spacing: 8px;
 		padding: 20px 0;
 		display: block;
 		text-align: center;
-		@include font-size(32px);
+		@include font-size(26px);
 		@include transition(.2s ease-in);
 		cursor: pointer;
 		&:hover{
