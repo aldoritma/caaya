@@ -39,13 +39,12 @@
               <img class="img-bot" id="img-bot-p-1" src="<?php echo base_url('assets/img/bottle-green.png');?>" alt="">
             </div>
             <div class="product-desc" id="prod-desc-p1">
-              <h5 class="stag">A classic made contemporary:</h5>
-              <h3 class="stag">revive me</h3>
-              <h3 class="stag">Jasmine Tea</h3>
+              <h5 class="stag"><?php echo stripslashes(html_entity_decode($homethree['title'])); ?></h5>
+              <h3 class="stag"><?php echo stripslashes(html_entity_decode($homethree['subtitle'])); ?></h3>
+              <h3 class="stag"><?php echo stripslashes(html_entity_decode($homethree['subtitle2'])); ?></h3>
               <div class="copy-desc" id="copy-desc-p-1">
                 <span></span>
-                <p>Aroma bunga melati yang segar,<br>membaur halus dengan teh yang<br>kaya rasa.</p>
-                <p>Membantu membuka pikiran,<br>menghidupkan kembali semangat.</p>
+                <?php echo stripslashes(html_entity_decode($homethree['description'])); ?>
               </div>
             </div>
 
@@ -74,12 +73,12 @@
               <img class="img-vanilla" id="img-van-p2" src="<?php echo base_url('assets/img/pandan-stick.png');?>" alt="">
             </div>
             <div class="product-desc" id="prod-desc-p2">
-              <h5 class="stag2">Inspired by ever-popular combination:</h5>
-              <h3 class="stag2">soothe me</h3>
-              <h3 class="stag2">Vanilla Pandan</h3>
+              <h5 class="stag2"><?php echo stripslashes(html_entity_decode($hometwo['title'])); ?></h5>
+              <h3 class="stag2"><?php echo stripslashes(html_entity_decode($hometwo['subtitle'])); ?></h3>
+              <h3 class="stag2"><?php echo stripslashes(html_entity_decode($hometwo['subtitle2'])); ?></h3>
               <div class="copy-desc" id="copy-desc-p-2">
                 <span></span>
-                <p>Lembutnya vanilla bertemu dengan<br>manisnya wangi pandan, mengingatkan<br>akan legitnya jajanan pasar.</p>
+                <?php echo stripslashes(html_entity_decode($homethree['description'])); ?>
               </div>
             </div>
           </div>
@@ -106,12 +105,16 @@
               <img class="img-bot" id="img-bot-red-p" src="<?php echo base_url('assets/img/bottle-red.png');?>" alt="">
             </div>
             <div class="product-desc">
-              <h5 class="stag3">A drinking experience as bold<br>& as adventurous as you:</h5>
-              <h3 class="stag3">power me</h3>
-              <h3 class="stag3">Roasted Rice</h3>
+            <h5 class="stag3">
+            <?php
+              $text = stripslashes(html_entity_decode($homeone['title']));
+              $titleone = wordwrap($text, 32, "<br />\n");
+              echo $titleone;?></h5>
+              <h3 class="stag3"><?php echo stripslashes(html_entity_decode($homeone['subtitle'])); ?></h3>
+              <h3 class="stag3"><?php echo stripslashes(html_entity_decode($homeone['subtitle2'])); ?></h3>
               <div class="copy-desc" id="copy-desc-p-3">
                 <span></span>
-                <p>Teh yang harum & beras sangrai<br>yang semerbak, menghasilkan<br>paduan yang bernuansa aromatik</p>
+                <?php echo stripslashes(html_entity_decode($homeone['description'])); ?>
               </div>
             </div>
           </div>

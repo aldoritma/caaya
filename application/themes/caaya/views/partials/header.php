@@ -14,9 +14,9 @@
 						<li>
 							<a href="<?php echo base_url('about');?>" <?php if ($this->uri->segment(1) == "about") echo "class='is-active'";?>>About</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="<?php echo base_url('activity');?>" <?php if ($this->uri->segment(1) == "activity") echo "class='is-active'";?>>Activity</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="<?php echo base_url('faq');?>" <?php if ($this->uri->segment(1) == "faq") echo "class='is-active'";?>>FAQ</a>
 						</li>
