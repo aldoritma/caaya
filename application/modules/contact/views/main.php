@@ -15,7 +15,7 @@
             <?php endif; ?>
                 </div>
                 <?php echo form_open_multipart(base_url('contact/savecontact'), 'class="form_create"'); ?>
-                 
+
                     <div class="clearfix wrap">
                         <div class="input-container col-6">
                             <input type="text" id="input-name" class="input-text" name="name">
