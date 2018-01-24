@@ -34,6 +34,10 @@ $bar-spacing: 8px;
 	&.open{
 		left: calc(35% + 40px);
 		// @include transition(.5s ease-in);
+    @include max-screen(768px){
+      left: calc(65% + 40px);
+    }
+
 	}
 }
 
@@ -91,6 +95,9 @@ $bar-spacing: 8px;
 	padding: 50px;
 	background: white;
 	width: 35%;
+  @include max-screen(768px){
+    width: 65%;
+  }
 	height: 100vh;
 	// @include transform(translateX(-100%));
 	left: -100%;
