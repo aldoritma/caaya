@@ -11,42 +11,44 @@
           </div>
         </div>
       </div>
-      <div class="about-detail" id="about-slider">
+
+      <?php  if($listabout):
+      $no=0; $rome=2;foreach ($listabout as $key => $listabout): ?>
+      <div class="about-detail" id="about-slider<?php if($no++ == "0") { echo ""; } else {echo $rome++;}?>">
         <div class="container about-detail-wrapper">
           <figure class="detail-img aligner">
-            <img src="<?php echo base_url('assets/img/about-slide1.png');?>" alt="">
+            <img src="<?php echo base_url('assets/about/original_'.$listabout['img']);?>" alt="">
           </figure>
           <div class="about-desc">
             <div class="wrap-desc">
-              <h3><span class="align--left">Paduan</span> Teh Caaya</h3>
+              <h3>
+              <?php $replace_p = array("<p>", "</p>");
+              $showdata = str_replace($replace_p, "", $listabout['title']);  
+              echo stripslashes(html_entity_decode($showdata)); ?>
+              </h3>
               <div class="will-hide">
+<<<<<<< HEAD
+                <p><?php echo stripslashes(html_entity_decode($listabout['description'])); ?></p>
+                <button class="button-green hide-parent"><?php echo stripslashes(html_entity_decode($listabout['button'])); ?>
+=======
                 <p>Indonesia terdiri dari aneka budaya, aneka sudut pandang, hasil dari penjumlahan banyak hal. Terinspirasi dari hal ini, Paduan Caaya terbangun dari tiga tipe teh tanah air, masing-masing dipilih karena kelebihannya: satu sebagai dasarnya, yang lain karena rasanya, dan yang terakhir untuk aromanya. Melalui kekuatan kumulatif berbagai elemen inilah kami berhasil mencapai apa yang menurut kami adalah perwujudan terbaik teh Indonesia. </p>
                 <button class="button-green hide-parent">Tea Fact
+>>>>>>> fe750cbfef97bfc9b14ee9b0b03d19a4bf67f474
                   <i class="demo-icon icon-angle-right"></i>
                 </button>
               </div>
               <div class="slider-wrapper will-show">
                 <div class="slider-container">
-                  <div class="slider-item">
-                    <p>
-                      Teh diperkenalkan pertama kali di Indonesia tahun 1684 oleh ahli botani Jerman, Andreas Cleyer yang bekerja untuk VOC.
-                    </p>
-                  </div>
-                  <div class="slider-item">
-                    <p>
-Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol biasanya ditemani cemilan seperti singkong rebus or uli goreng.                    </p>
-                  </div>
-                  <div class="slider-item">
-                    <p>Mantan presiden Amerika Serikat, Obama, pada kunjungannya ke Bali tahun 2017 membawa teh beras merah khas Bali sebagai oleh-oleh.</p>
-                  </div>
-                  <div class="slider-item">
-                    <p>Masyarakat Sunda di daerah Jawa Barat mengenal tradisi Nyaneut menggunakan teh Kejek khas Cigedug yang dinikmati bersama kudapan seperti ubi jalar, singkong, dan ganyong.</p>
-                  </div>
-                  <div class="slider-item">
-                    <p>
-                    Di Tanah Minang ada teh talua, minumah teh khas Sumatera Barat yaitu teh yang diseduh dengan telur ayam atau bebek mentah, gula dan susu kental manis.
-                    </p>
-                  </div>
+                  <?php if ($listabout['id']): ?>
+                      <?php foreach ($listabout['id'] as $key => $listabout): ?>
+                        <div class="slider-item">
+                          <p>
+                            <?php echo $listabout['description']; ?>
+                        </p>
+                        </div>
+                      <?php endforeach; ?>
+                    <?php else: ?>
+                    <?php endif; ?> 
 
                 </div>
                 <div class="slider-nav">
@@ -60,6 +62,8 @@ Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol b
           </div>
         </div>
       </div>
+<<<<<<< HEAD
+=======
       <div class="about-detail" id="about-slider2">
         <div class="container about-detail-wrapper">
           <figure class="detail-img aligner">
@@ -224,22 +228,7 @@ Masyarakat Betawi memiliki kebiasaan tea time, Nyahi, minum teh sambil ngobrol b
                   <div class="slider-item"><p>Beberapa jenis beras: Basmati (butiran panjang dengan profil rasa yang unik),  Long Grain White (beras putih biasa), Abrorio (beras putih pendek lengket ketika dimasak), Jasmine (beras panjang beraroma alami), Whole Grain Brown (beras coklat dengan bagian gandum yang utuh), Black Sticky: beras hitam yang lengket ketika dimasak</p></div>
                   <div class="slider-item"><p>Beras dibudidayakan di lebih dari 100 negara dan di setiap benua kecuali Antartika. Ada lebih dari 40.000 varietas beras di dunia dan sekitar 4000 di antaranya dibudidayakan secara komersil.</p></div>
                   <div class="slider-item"><p>Produksi beras pada tahun 2016 mencapai 472,04 juta ton. Tiga produsen terbesar adalah Cina (145 juta ton), India (106 juta ton) dan Indonesia (41 juta ton). </p></div>
+>>>>>>> fe750cbfef97bfc9b14ee9b0b03d19a4bf67f474
 
-                </div>
-                <div class="slider-nav">
-                  <span class="arrow arrow-prev">
-                    <i class="demo-icon icon-angle-left"></i>
-                  </span>
-                  <div class="dots"></div>
-                  <span class="arrow arrow-next">
-                    <i class="demo-icon icon-angle-right"></i>
-                  </span>
-                </div>
-                <button class="button-green hide-parent">
-                  <i class="demo-icon icon-angle-left"></i>Back</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <?php  endforeach;endif;?>
     </main>

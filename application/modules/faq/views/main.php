@@ -11,43 +11,45 @@
                 <div class="row tabs">
                     <div class="col-3">
                         <nav class="tabs-navigation">
+<<<<<<< HEAD
+                            <?php  if($listfaq):
+                            $no=1; foreach ($listfaq as $key => $listfaq): ?>
+                            <a class="nav-tab" href="#tab<?php echo $no++;?>"><?php echo $listfaq['title'];?></a>
+                            <?php endforeach;?>
+                            <?php endif;?>
+=======
                             <a class="nav-tab" href="#tab1">Keterangan Umum</a>
                             <a class="nav-tab" href="#tab2">Kualitas, Keamanan<br>& Rasa Produk</a>
                             <!-- <a class="nav-tab" href="#tab3">Kemasan</a> -->
+>>>>>>> fe750cbfef97bfc9b14ee9b0b03d19a4bf67f474
                         </nav>
                     </div>
                     <div class="col-9">
-                        <div class="tab-content" id="tab1">
+                        <?php  if($listfaqdata):
+                        $no=1; foreach ($listfaqdata as $key => $listfaqdata): ?>
+                        <div class="tab-content" id="tab<?php echo $no++;?>">
                             <div class="accordion">
                                 <ul>
+                                 <?php if ($listfaqdata['catid']): ?>
+                                 <?php foreach ($listfaqdata['catid'] as $key => $listfaqdata): ?>
+
                                     <li>
                                         <input type="checkbox" checked>
                                         <i></i>
-                                        <h2>Apakah Caaya?</h2>
-                                        <p>Caaya adalah rangkaian teh Indonesia yang terinspirasi dari kekayaan budaya & kekayaan alam nusantara</p>
+                                        <h2><?php echo $listfaqdata['title'];?></h2>
+                                        <p><?php echo stripslashes(html_entity_decode($listfaqdata['description'])); ?></p>
                                     </li>
-                                    <li>
-                                        <input type="checkbox" checked>
-                                        <i></i>
-                                        <h2>Apa saja varian rasa Caaya?</h2>
-                                        <p>Saat ini Caaya hadir dalam tiga varian: Revive Me Jasmine, Soothe Me Vanilla Pandan, dan Power Me Toasted Rice. </p>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" checked>
-                                        <i></i>
-                                        <h2>Adakah manfaat yang dimiliki Caaya?</h2>
-                                        <p>Teh dalam kemasan sudah menjadi bagian dari kehidupan sehari-hari masyarakat Indonesia. Saat ini masyarakat Indonesia menikmati teh dalam kemasan lebih untuk memperoleh kesegaran, terutama karena iklim Indonesia yang cenderung panas dan lembab.</p>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" checked>
-                                        <i></i>
-                                        <h2>Apa yang membedakan Caaya dengan teh kemasan lainnya?</h2>
-                                        <p>Karena terinspirasi dari kekayaan alam dan budaya, sensasi rasa Caaya langsung terasa familiar bagi lidah Indonesia. Prinsip kami dalam pengembangan Caaya adalah segalanya dalam takaran yang tepat, tidak kurang dan tidak lebih.</p>
-                                    </li>
+                                      <?php endforeach; ?>
+                                    <?php else: ?>
+                                    <?php endif; ?> 
                                 </ul>
                             </div>
                             <div class="more-help">Belum menemukan jawaban atas pertanyaan Anda? Silahkan <a href="#">hubungi kami</a></div>
                         </div>
+<<<<<<< HEAD
+                        <?php endforeach;?>
+                            <?php endif;?>
+=======
                         <div class="tab-content" id="tab2"><div class="accordion">
                             <ul>
                                 <li>
@@ -91,6 +93,7 @@
                             <p>Kemasan Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro obcaecati id molestias doloribus praesentium expedita voluptatibus harum tempore nesciunt!</p>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis natus, accusantium error exercitationem placeat doloremque est, repudiandae inventore deleniti temporibus quibusdam laboriosam veniam. Laboriosam necessitatibus maxime vel distinctio earum autem, odio pariatur facilis labore quidem assumenda, suscipit perferendis sit repudiandae nihil, officia tempora nesciunt. Odio inventore obcaecati autem culpa earum!</p>
                         </div> -->
+>>>>>>> fe750cbfef97bfc9b14ee9b0b03d19a4bf67f474
                     </div>
                 </div>
             </div>
