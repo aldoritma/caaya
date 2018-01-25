@@ -24,13 +24,13 @@
 							<a href="<?php echo base_url('contact');?>" <?php if ($this->uri->segment(1) == "contact") echo "class='is-active'";?>>Contact Us</a>
 						</li>
 						<li class="nav-socmed">
-							<a href="#">
+							<a href="https://www.facebook.com/caaya.id/" target="_blank">
 								<img src="<?php echo base_url('assets/img/ic-nav-1.png');?>" alt="">
 							</a>
-							<a href="#">
+							<!-- <a href="#">
 								<img src="<?php echo base_url('assets/img/ic-nav-2.png');?>" alt="">
-							</a>
-							<a href="#">
+							</a> -->
+							<a href="https://www.instagram.com/caaya.id/" target="_blank">
 								<img src="<?php echo base_url('assets/img/ic-nav-3.png');?>" alt="">
 							</a>
 						</li>

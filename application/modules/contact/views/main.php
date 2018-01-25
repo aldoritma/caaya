@@ -97,19 +97,19 @@
                     <h3>Follow Us</h3>
                     <ul class="list--none">
                         <li>
-                            <a href="#">
-                                <img src="<?php echo base_url('assets/img/ic-fb.png');?>" alt="">
-                            </a>
+                          <a href="https://www.facebook.com/caaya.id/" target="_blank">
+                            <img src="<?php echo base_url('assets/img/ic-nav-1.png');?>" alt="">
+                          </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <img src="<?php echo base_url('assets/img/ic-twitter.png');?>" alt="">
                             </a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#">
-                                <img src="<?php echo base_url('assets/img/ic-linkdin.png');?>" alt="">
-                            </a>
+                          <a href="https://www.instagram.com/caaya.id/" target="_blank">
+                            <img src="<?php echo base_url('assets/img/ic-nav-3.png');?>" alt="">
+                          </a>
                         </li>
                     </ul>
                 </div>
