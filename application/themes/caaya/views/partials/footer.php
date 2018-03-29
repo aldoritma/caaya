@@ -2,18 +2,18 @@
 			<section class="store-locator">
 				<h3 class="heading-title">Find us at</h3>
 				<div class="stores align--center">
-					<a href="https://www.blibli.com/" class="inline-block">
+					<!-- <a href="https://www.blibli.com/" class="inline-block">
 						<img src="<?php echo base_url('assets/img/storec1.png');?>" class="d-block" alt="">
-					</a>
+					</a> -->
 					<a href="https://www.lazada.co.id/" class="inline-block">
 						<img src="<?php echo base_url('assets/img/storec2.png');?>" class="d-block" alt="">
 					</a>
-					<a href="https://www.tokopedia.com/" class="inline-block">
+					<!-- <a href="https://www.tokopedia.com/" class="inline-block">
 						<img src="<?php echo base_url('assets/img/storec3.png');?>" class="d-block" alt="">
 					</a>
 					<a href="https://www.bukalapak.com/" class="inline-block">
 						<img src="<?php echo base_url('assets/img/storec4.png');?>" class="d-block" alt="">
-					</a>
+					</a> -->
 				</div>
 			</section>
 			<section class="mega-footer">
@@ -37,7 +37,7 @@
 						</ul>
 					</div>
 					<div class="copyright">
-						<p class="align--center">Copyright © 2018 PT Lorem Ipsum. All Rights reserved</p>
+						<p class="align--center">Copyright © 2018 PT Aqua Golden Mississipi</p>
 					</div>
 				</div>
 				<div class="col-2">
@@ -48,4 +48,3 @@
 
 			</section>
 		</footer>
-		

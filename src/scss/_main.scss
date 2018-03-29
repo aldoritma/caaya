@@ -145,16 +145,17 @@ main{
     }
     .jasmine-copy{
         position: relative;
-        left: 15%;
-        top: 100px;
+        left: 10%;
+        right: 10%;
+        top: 20px;
+        width: 55%;
         color: white;
         line-height: 1;
         h4{
             @include font-size(70px);
             margin: 0;
-            vertical-align: top;
-            display: inline-block;
-            margin-right: -50px;
+            display: block;
+            text-align: right;
         }
         h2{
             @include font-size(200px);
@@ -214,7 +215,6 @@ main{
             position: relative;
         }
         .bottle-wrapper{
-            left: 57%;
         }
         .rice-copy{
             position: relative;
