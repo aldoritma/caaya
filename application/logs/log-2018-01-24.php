@@ -332,3 +332,4 @@ ERROR - 2018-01-24 02:42:13 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2018-01-24 02:42:13 --> Severity: Warning --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/outside/caaya_github/application/modules/faq/views/main.php 33
 ERROR - 2018-01-24 03:20:02 --> 404 Page Not Found: /index
 ERROR - 2018-01-24 03:20:06 --> 404 Page Not Found: /index
+ERROR - 2018-01-24 03:46:58 --> 404 Page Not Found: /index
