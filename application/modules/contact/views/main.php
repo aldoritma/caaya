@@ -72,7 +72,7 @@
                                 <span>Captcha</span>
                             </div>
                             <div class="captcha-input input-container col-3">
-                                <input type="text" id="mainCaptcha" name="mycaptcha" disabled/>
+                                <input type="text" id="mainCaptcha" name="mycaptcha" readonly/>
                                 <input type="button" id="refresh" value="Click to change" />
                                 <button type="submit" id="submit-btn" class="button-submit">Kirim</button>
                             </div>

@@ -12,7 +12,7 @@ class Contact extends Public_Controller {
 
     }
 
-    function index()
+    public function index()
     {
         $this->template->build('main');
 
