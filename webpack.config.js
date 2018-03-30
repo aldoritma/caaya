@@ -122,6 +122,12 @@ module.exports = {
 			template: './src/faq.html'
 			// chunks: ['contact']
 		}),
+		new HtmlWebpackPlugin({
+			hash: true,
+			filename: 'instasampling.html',
+			template: './src/instasampling.html'
+			// chunks: ['contact']
+		}),
 		new ExtractTextPlugin({
             filename: 'app.css',
             disable: !isProd,
