@@ -513,7 +513,25 @@
 		}
 	}
 }
+@include max-screen(400px) {
+	.section-header.insta-header::before {
+		width: 110px;
+		height: 180px;
+	}
+	.section-header.insta-header h1{
+		padding-left: 55px;
+	}
+	.section-header.insta-header{
+		background-size: cover !important;
+	}
 
+}
+@include max-screen(340px) {
+	.section-header.insta-header::before {
+		width: 90px;
+		height: 160px;
+	}
+}
 @include max-screen(320px){
 	.hero-home h1{
 		@include font-size(30px);
