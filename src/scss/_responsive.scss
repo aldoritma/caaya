@@ -1,7 +1,6 @@
 @include max-screen(1024px){
 	// content
 }
-
 @include max-screen(768px){
 	html{
 		font-size: 14px;
@@ -153,9 +152,7 @@
 		display: none;
 	}
 }
-
-
-@include max-screen(640px){
+@include max-screen(480px){
 	// content
 	html{
 		font-size: 12px;
